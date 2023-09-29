@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+
+</head>
+
+<body>
+
+    <!--script>
+        let k;
+        let j = prompt('how old are you');
+        if (j < 18) {
+            k = false
+
+        } else {
+            k = true
+        }
+        if (k = true)
+            alert('yes you can apply for the job')
+    </script-->
+    <!--script>
+        let table = {
+            material: 'wooden',
+            purpose: 'reading',
+            color: 'red',
+            maker: 'italian',
+            age: '23'
+        }
+        console.log(`my order:${table.age} ${table.color} ${table.maker});
+    </script-->
+    <!--script>
+
+        let f = prompt('what is 2+2');
+        let s = 4;
+        alert(f === s)
+    </script-->
+    <!--script>
+        let a = 5;
+        let b = 6;
+        alert(a < 20 &&
+            b > 7)
+     </script-->
+    <!--script>
+        let age = prompt('your age please');
+        let gender = prompt('your gender');
+        if (age < 18) {
+            alert('you can take water only');
+        }
+        else if (age > 18 && gender == 'female') {
+            alert('you can take coke');
+        }
+        else if (age > 18 && gender == 'male') {
+            alert('you can take beer')
+        }
+        else {
+            alert('you are not invited')
+        }   
+
+    </script-->
+    <!--script>
+        let a = prompt('how old are you');
+        let b = (a >= 18) ? 'apply' : 'go back to school';
+        alert(b);
+    </script-->
+    <!--button onclick="taiwo()">
+        click me
+    </button-->
+    <!--script>
+        function taiwo() {
+            let a = new date().gethours();
+            if (a > 0 && a < 12) {
+                alert('good morning');
+            }
+            else if (a > 12 && a < 15) {
+                alert('good afternoon');
+            }
+            else if (a > 15 && a < 23) {
+                alert('good evening');
+            }
+
+        }
+
+    </script-->
+    <!--script>
+        let d = Number(prompt('how old is nigeria'));
+        switch (+d) {
+            case 32:
+                alert('low');
+                break;
+            case 50:
+                alert('close');
+                break;
+            case 62:
+                alert('correct');
+                break;
+            case 74:
+                alert('give up');
+                break;
+            default:
+                alert('wrong'); 
+        }
+
+    </script-->
+
+    <!--script>
+        function david() {
+            let x = prompt('how old ?');
+            let ifeage = x;
+            let rokeebage = x;
+            alert('ifeage + rokeebage');
+        }
+        let day = new Date().getDate();
+
+        if (day == 1) {
+            david();
+        }
+    </script-->
+    <!--script>
+        let name = prompt('2+6');
+        function david() {
+            if (name == 5) {
+                alert('you are close');
+            }
+
+            else if (name == 8) {
+                alert('correct');
+            }
+            else {
+                alert('wrong');
+            }
+
+
+        } david();
+    </script-->
+    <!--input id="first1">
+    <br><br>
+    <input id="second2">
+    <h3 id="answer"></h3>
+    <button onclick="david()">
+        calculate
+    </button-->
+
+    <!--script>
+
+        function david() {
+            let input1 = document.getElementById('first1').value;
+            let input2 = document.getElementById('second2').value;
+            let answer = input1 * input2;
+            document.getElementById('answer').innerHTML = answer;
+        }
+    </script-->
+    <!--script>
+        function calage(birthyear) {
+            return new Date().getFullYear() - birthyear;
+        }
+        let x = prompt('which year you born')
+        alert(calage(x));
+
+    </script-->
+    <!--script>
+        function checkage(age) {
+            if (age >= 18) {
+                return true
+            } else {
+                return confirm('do you have your parent permission');
+            }
+        } let x = prompt('how old are you');
+        if (checkage(x)) {
+            alert('access granted');
+        } else {
+            alert('access denied');
+        }
+    </script-->
+    <!--script>
+        let prayers = new Date().getHours();
+        switch (prayers) {
+            case 6:
+                alert('subuhi')
+                break;
+            case 14:
+                alert('zuhr')
+                break;
+            case 16:
+                alert('ashri')
+                break;
+            case 19:
+                alert('mogrib')
+                break;
+            case 20:
+                alert('isha')
+                break;
+        }
+    </script-->
+
+
+    <!--h3 id="answer"></h3>
+    <button onclick="calage(birthyear)">
+        calculate
+    </button-->
+    <!--script>
+        function calage(birthyear) {
+            return new Date().getFullYear() ;
+        }
+        let x = prompt('year left to retire')
+        alert(calage(x));
+
+
+    </script-->
+    <!--script>
+        let retirementyear = (birthyear, firstname, retirementage) => {
+            const age = new Date().getFullYear() - birthyear;
+            const yearleft = retirementage - age;
+            return `${firstname}, you are due to retire in ${yearleft}  years`
+        }
+        alert(retirementyear(1990, 'david', 65));
+    </script-->
+    <select id="baerf">
+        <option value="option1">public accomodation</option>
+        <option value="option2">hotel Accomodation</option>
+    </select>
+    <select id="rase" style="display: none;">
+        <option value="">managing(1500-2000)</option>
+        <option value="">average (7000-1000)</option>
+        <option value="">rich(30000)</option>
+
+    </select>
+
+    <script>
+
+        let a = document.querySelector('baerf');
+        let b = document.querySelector('#rase');
+
+        baerf.addEventlistener('click', () => {
+
+            if (a.value === 'option2') {
+                rase.style.display = "inline-block"
+            }
+            else {
+                rase.style.display = "none"
+            }
+        }
+        )
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORY OF javascript</title>
+    <style>
+        body {
+            background: black;
+            color: yellowgreen;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .sandine {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+        }
+
+        .sandine::before {
+            content: '';
+            position: absolute;
+            margin-top: 34px;
+
+            right: 374px;
+            width: 2px;
+            height: 60%;
+
+            background: rgb(161, 224, 37);
+            animation: blinkcursor 0.8s steps(4) infinite;
+        }
+
+        @keyframes blinkcursor {
+
+            0%,
+            75% {
+                opacity: 1;
+            }
+
+            76%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .sandine h2 {
+            position: relative;
+            color: rgb(161, 224, 37);
+            letter-spacing: 4px;
+            font-size: 60px;
+            animation: typing 8s steps(10s) infinite;
+            overflow: hidden;
+        }
+
+        @keyframes typing {
+
+            0%,
+            90%,
+            100% {
+                width: 0px;
+            }
+
+            30%,
+            60% {
+                width: 400.06px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sandine">
+        <h2>HISTORY OF JAVASCRIPT</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
