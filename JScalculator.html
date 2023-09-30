@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background: black;
+            color: yellowgreen;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .burt {
+            margin-top: 11px;
+            position: absolute;
+            left: 32%;
+            width: 200px;
+            padding: 9px;
+            cursor: pointer;
+            border-radius: 7px;
+            outline: none;
+            border: none;
+            font-weight: 600;
+        }
+
+        .raw {
+            margin-top: 84px;
+            margin-left: 31%;
+        }
+
+        .rid {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            border: 1px solid yellowgreen;
+            width: 720px;
+            max-width: 600px;
+            min-width: 300px;
+            height: 300px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 4px 4px rgba(5, 220, 37, 0.5);
+            box-sizing: border-box;
+        }
+
+        .ext {
+            font-weight: 600;
+
+        }
+
+        .durate {
+            margin-left: 19%;
+        }
+
+        .rate {
+            margin-left: 3%;
+        }
+
+        .red {
+            padding: 4px;
+            background: black;
+            color: yellowgreen;
+            border: 1px groove yellowgreen;
+
+        }
+
+        .inv {
+            font-weight: 600;
+        }
+
+        .ote {
+            margin-left: 3%;
+        }
+
+        .caw {
+
+            margin-top: -20px;
+            margin-left: 30%;
+        }
+
+        .ment {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media screen and (max-width:768px) {
+            body {
+
+                background: black;
+                color: yellowgreen;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+
+            .burt {
+                margin-top: 11px;
+                position: absolute;
+                left: 16%;
+                width: 200px;
+                padding: 9px;
+                cursor: pointer;
+                border-radius: 7px;
+                outline: none;
+                border: none;
+                font-weight: 600;
+            }
+
+            .raw {
+                margin-top: 84px;
+                margin-left: 12%;
+            }
+
+            .caw {
+                margin-top: -19px;
+                margin-left: 12%;
+            }
+
+            .rid {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                border: 1px solid yellowgreen;
+                width: 320px;
+                max-width: 600px;
+                min-width: 300px;
+                height: 450px;
+                border-radius: 12px;
+            }
+
+            .ext {
+                font-weight: 600;
+
+            }
+
+            .durate {
+                margin-left: 3%;
+            }
+
+            .rate {
+                margin-left: 3%;
+            }
+
+            .red {
+                padding: 4px;
+                background: black;
+                color: yellowgreen;
+                border: 1px groove yellowgreen;
+
+            }
+
+            .inv {
+                font-weight: 600;
+            }
+
+            .ote {
+                margin-left: 3%;
+                font-size: 12px;
+            }
+
+            .ment {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="rid container">
+        <h2 style="text-align: center;" class="ext">INVESTMENT CALCULATOR</h2>
+        <div class="container-fluid ment">
+            <div class="rate">
+                <label for="number" class="inv">INVESTMENT AMOUNT:</label><br>
+                <input type="number" value="1000" class="red" id="invst">
+            </div>
+            <div class="durate">
+                <label for="number" class="inv">DURATION:</label><br>
+                <input type="number" value="1" class="red" id="drate">
+                <select name="period" id="period" class="red">
+                    <option value="month">MONTH</option>
+                    <option value="year">YEAR</option>
+
+                </select>
+            </div>
+
+
+        </div>
+        <div>
+            <p class="inv ote">NOTE: ALL INVESTMENT ROI IS 15% PER MONTH</p>
+            <button style="background: yellowgreen;" class="burt" id="calbtn" onclick="result()">CALCULATE</button>
+            <div id="withdraw" class="raw"></div>
+            <div id="ground"></div>
+            <div id="busted" class="caw" style="display: none;"></div>
+            <div id="bust"></div>
+
+        </div>
+
+    </div>
+    <script>
+        let btn = document.getElementById("calbtn")
+        let draw = document.getElementById("withdraw")
+        let raw = document.getElementById("busted")
+        let bust = document.getElementById("bust")
+        sult = () => {
+            let invst = Number(document.getElementById("invst").value);
+
+            let drate = Number(document.getElementById("drate").value);
+            let riod = document.getElementById("period").value;
+            let investment =
+                period == "month" ? ((invst * 15) * drate) / 100 : ((invst * 15*drate)/100 )
+            let draw = invst + investment;
+            withdraw.innerHTML = `<div>You will withdraw  <span>${draw.toFixed(2)}</span> naira</div>`;
+
+
+
+        }
+        calbtn.addEventListener("click", sult);
+        window.addEventListener("load", sult);
+
+
+
+
+    </script>
+</body>
+
+
+</html>
