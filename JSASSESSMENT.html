@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>JAVASCRIPT</title>
+    <style>
+        body {
+            background-color: black;
+            color: yellowgreen;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .rassta {
+            color: yellowgreen;
+            text-decoration: none;
+
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .loader {
+            position: relative;
+        }
+
+        .loader::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 70%;
+            margin-top: 9px;
+            background: yellowgreen;
+            animation: blink 0.8s steps(3) infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            75% {
+                opacity: 1;
+            }
+
+            76%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .loader h2 {
+            position: relative;
+            color: yellowgreen;
+            letter-spacing: 5px;
+            font-size: 4rem;
+            text-transform: uppercase;
+            animation: cursor 8s steps(10) infinite;
+            overflow: hidden;
+
+        }
+
+        @keyframes cursor {
+
+            0%,
+            90%,
+            100% {
+                width: 0;
+            }
+
+            30%,
+            60% {
+                width: 434.06px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading container-fluid">
+        <div class="loader">
+            <h2><span style="color:rgb(24, 78, 7) ;">java</span><span>script</span></h2>
+        </div>
+    </div>
+    <div>
+        <h1>PAGE CONTENT</h1>
+        <p>(<i class="fa-regular fa-hand-pointer"></i>)-Click Below :</p>
+        <ul>
+            <li><a href="JShistory.html" class="rassta">HISTORY OF JAVASCRIPT</a></li>
+            <li><a href="jsswitch.html" class="rassta">SWITCH ASSIGNMENT</a></li>
+            <li><a href="JScalculator1.html" class="rassta">JAVASCRIPT CALCULATOR</a></li>
+            <li><a href="JScalculator.html" class="rassta">JAVASCRIPT INVESTMENT CALCULATOR</a></li>
+            <li><a href="JSloop.html" class="rassta">JAVASCRIPT LOOP</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

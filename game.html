@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            color: yellowgreen;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .zaddy {
+            text-align: center;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zaddy">
+        <h1 class="">GUESS MY NUMBER</h1>
+        <h3 id="uess">start guessing....</h3>
+        <input placeholder="Guess a number btw 1 to 20" id="old">
+        <h5>The number is ??</h5>
+
+        <button style="width: 70px; padding: 10px;" onclick="damn()" id="nyash">check</button>
+
+        <button style="width: 70px; padding: 10px; display:none;" onclick="amn()" id="'ash"><a
+                href="game.html">REPLAY</a></button>
+        <h2 id="high">HIGHEST SCORE:0</h2>
+
+    </div>
+    <script>
+        let guess = document.getElementById('uess')
+        let no = Math.trunc(Math.random() * 20) + 1
+        let score = 20;
+        let check = document.getElementById('nyash')
+
+
+
+
+        function ore() {
+
+            score = score - 4
+            if (score === 0) {
+                old.value = `score:${score}`
+                old.disabled = 'disabled'
+                uess.innerHTML = "GAME OVER"
+                uess.style.color = "red"
+                document.getElementById('nyash').style.display = 'none'
+                document.getElementById('ash').style.display = 'inline-block'
+
+
+            }
+        }
+        function damn() {
+            let old = Number(document.getElementById('old').value)
+            if (isNaN(old) || !old || old < 1 || old > 20) {
+                uess.innerHTML = "<h3> INVALID</h3>"
+                uess.style.color = 'red'
+
+
+                ore()
+            }
+            else if (old < no) {
+                uess.innerHTML = "your guess is too low"
+
+                ore()
+            }
+            else if (old > no) {
+                uess.innerHTML = "your guess is too high"
+                ore()
+            }
+            else if (old == no) {
+                uess.innerHTML = 'CORRECT';
+                uess.style.color = 'green';
+                document.getElementById('nyash').style.display = 'none'
+                document.getElementById('ash').style.display = 'inline-block'
+
+
+            }
+            console.log(no)
+            function amn() {
+                document.getElementById('nyash').style.display = 'none'
+                document.getElementById('ash').style.display = 'inline-block'
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

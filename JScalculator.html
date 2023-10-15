@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <title>Document</title>
     <style>
         body {
@@ -12,6 +24,56 @@
             color: yellowgreen;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+        }
+
+        .dasw {
+            color: yellowgreen;
+            border: 1px solid yellowgreen;
+            border-radius: 26px;
+        }
+
+        .dasw:hover {
+            color: black;
+            background: yellowgreen;
+            border: 1px solid yellowgreen;
+            border-radius: 26px;
+        }
+
+        .sia {
+            background: black;
+            padding: 4px;
+
+            border: 1px solid yellowgreen;
+            color: yellowgreen;
+        }
+
+        .ag {
+            background: black;
+        }
+
+        .rase {
+            border: 1px solid yellowgreen;
+            border-radius: 26px;
+            background: black;
+            width: 50px;
+            margin-left: 23px;
+            margin-top: 52px;
+        }
+
+
+        .fag {
+            width: 300px;
+            background: black;
+            border: 1px solid yellowgreen;
+        }
+
+        .sandy {
+            color: yellowgreen;
+        }
+
+        .pst {
+            margin-top: 93px;
+            margin-left: 23px;
         }
 
         .burt {
@@ -38,7 +100,7 @@
             left: 50%;
             top: 50%;
             border: 1px solid yellowgreen;
-            width: 720px;
+            width: 540px;
             max-width: 600px;
             min-width: 300px;
             height: 300px;
@@ -87,6 +149,58 @@
             flex-direction: row;
         }
 
+        .gop {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 80%;
+        }
+
+        .lase {
+            color: yellowgreen;
+            border: 1px solid yellowgreen;
+            text-decoration: none;
+        }
+
+
+        .ase {
+            color: yellowgreen;
+
+            text-decoration: none;
+        }
+
+        .ase:hover {
+            color: black;
+            text-decoration: none;
+            background: yellowgreen;
+            padding: 9px;
+        }
+
+        .dy {
+            background: yellowgreen;
+            outline: 1px solid yellowgreen;
+
+        }
+
+        .west {
+            color: yellowgreen;
+            text-decoration: none;
+        }
+
+        .ase:hover {
+            color: black;
+            text-decoration: none;
+            background: yellowgreen;
+            padding: 9px;
+        }
+
+        .ody {
+
+            background: rgb(6, 5, 5);
+            outline: 1px solid yellowgreen;
+
+        }
+
         @media screen and (max-width:768px) {
             body {
 
@@ -128,12 +242,13 @@
                 width: 320px;
                 max-width: 600px;
                 min-width: 300px;
-                height: 450px;
+                height: 350px;
                 border-radius: 12px;
             }
 
             .ext {
                 font-weight: 600;
+                font-size: 19px;
 
             }
 
@@ -166,67 +281,169 @@
                 display: flex;
                 flex-direction: column;
             }
+
+            .rase {
+                border: 1px solid yellowgreen;
+                border-radius: 26px;
+                background: black;
+                width: 50px;
+                margin-left: 23px;
+                margin-top: 52px;
+            }
+
+
+            .fag {
+                width: 300px;
+                height: 75px;
+                background: black;
+            }
+
+            .sandy {
+                color: yellowgreen;
+            }
+
+            .pst {
+                margin-top: -33px;
+                margin-left: 3px;
+            }
+
+            .ag {
+                font-size: 12px;
+
+                line-height: 13px;
+                background: black;
+            }
+
+            .dasw {
+                color: yellowgreen;
+                border: 1px solid yellowgreen;
+                border-radius: 26px;
+                width: 30px;
+
+            }
+
+            .dasw:hover {
+                color: black;
+                background: yellowgreen;
+                border: 1px solid yellowgreen;
+                border-radius: 26px;
+            }
+
+            .gop {
+                width: 43px;
+                margin-top: 45px;
+            }
         }
     </style>
 </head>
 
 <body>
-
-    <div class="rid container">
-        <h2 style="text-align: center;" class="ext">INVESTMENT CALCULATOR</h2>
-        <div class="container-fluid ment">
-            <div class="rate">
-                <label for="number" class="inv">INVESTMENT AMOUNT:</label><br>
-                <input type="number" value="1000" class="red" id="invst">
+    <div class="pst">
+        <p class="rase">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                aria-expanded="false" aria-controls="collapseWidthExample">
+                <i class="fa-solid fa-question sandy" style="margin-left: 3px;"></i>
+            </button>
+        </p>
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body fag">
+                    <p class="ag"> How to Use: input your ideal amount with the duration you want to use to invest and
+                        then
+                        (<i class="fa-regular fa-hand-pointer"></i>)-click the
+                        calculate button for your withdrawalto be displayed.
+                    </p>
+                </div>
             </div>
-            <div class="durate">
-                <label for="number" class="inv">DURATION:</label><br>
-                <input type="number" value="1" class="red" id="drate">
-                <select name="period" id="period" class="red">
-                    <option value="month">MONTH</option>
-                    <option value="year">YEAR</option>
+            <div class="rid container">
+                <h2 style="text-align: center;" class="ext">INVESTMENT CALCULATOR</h2>
+                <div class="container-fluid ment">
+                    <div class="rate">
+                        <label for="number" class="inv">INVESTMENT AMOUNT:</label><br>
+                        <input type="number" value="1000" class="red" id="invst">
+                    </div>
+                    <div class="durate">
+                        <label for="number" class="inv">DURATION:</label><br>
 
-                </select>
+                        <select name="period" id="period" class="red">
+                            <option value="month">1 MONTH</option>
+                            <option value="month">2 MONTH</option>
+                            <option value="month">3 MONTH</option>
+                            <option value="month">4 MONTH</option>
+                            <option value="month">5 MONTH</option>
+                            <option value="month">6 MONTH</option>
+                            <option value="month">7 MONTH</option>
+                            <option value="month">8 MONTH</option>
+                            <option value="month">9 MONTH</option>
+                            <option value="month">10MONTH</option>
+                            <option value="month">11MONTH</option>
+                            <option value="month">12MONTH</option>
+
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+                <div>
+                    <p class="inv ote">NOTE: ALL INVESTMENT ROI IS 15% PER MONTH</p>
+                    <button style="background: yellowgreen;" class="burt" id="calbtn"
+                        onclick="result()">CALCULATE</button>
+                    <div id="withdraw" class="raw"></div>
+                    <div id="ground"></div>
+                    <div id="busted" class="caw" style="display: none;"></div>
+                    <div id="bust"></div>
+
+                </div>
+
+            </div>
+            <script>
+                let btn = document.getElementById("calbtn")
+                let draw = document.getElementById("withdraw")
+                let raw = document.getElementById("busted")
+                let bust = document.getElementById("bust")
+                document.getElementById('calbtn').addEventListener('click', () => {
+                    let invst = Number(document.getElementById("invst").value);
+                    let riod = (document.getElementById("period").value);
+                    let roi = invst * 0.15;
+                    le
+
+                    let draw = Number(roi) + Number(invst);
+                    withdraw.innerHTML = `<div>You will withdraw  <span>${draw}</span> naira</div>`;
+
+
+
+
+                })
+
+
+
+
+
+            </script>
+            <button class="btn gop dasw" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">JS</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header dy">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                    <button type="button" class=" btn-close hoes" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ody">
+                    <ul>
+                        <li><a href="JSASSESSMENT.html" class="west">Main Page</a></li>
+                        <li><a href="JShistory.html" class="west">JShistory</a></li>
+                        <li><a href="JScalculator1.html" class="west">JScalculator</a></li>
+                        <li><a href="JScalculator.html" class="west">JS invstment calculator</a></li>
+                        <li><a href="jsswitch.html" class="west">JSswitch</a></li>
+                        <li><a href="JSloop.html" class="west">JSLOOP</a></li>
+                    </ul>
+                </div>
             </div>
 
-
-        </div>
-        <div>
-            <p class="inv ote">NOTE: ALL INVESTMENT ROI IS 15% PER MONTH</p>
-            <button style="background: yellowgreen;" class="burt" id="calbtn" onclick="result()">CALCULATE</button>
-            <div id="withdraw" class="raw"></div>
-            <div id="ground"></div>
-            <div id="busted" class="caw" style="display: none;"></div>
-            <div id="bust"></div>
-
-        </div>
-
-    </div>
-    <script>
-        let btn = document.getElementById("calbtn")
-        let draw = document.getElementById("withdraw")
-        let raw = document.getElementById("busted")
-        let bust = document.getElementById("bust")
-        sult = () => {
-            let invst = Number(document.getElementById("invst").value);
-
-            let drate = Number(document.getElementById("drate").value);
-            let riod = document.getElementById("period").value;
-            let investment =
-                period == "month" ? ((invst * 15) * drate) / 100 : ((invst * 15*drate)/100 )
-            let draw = invst + investment;
-            withdraw.innerHTML = `<div>You will withdraw  <span>${draw.toFixed(2)}</span> naira</div>`;
-
-
-
-        }
-        calbtn.addEventListener("click", sult);
-        window.addEventListener("load", sult);
-
-
-
-
-    </script>
 </body>
 
 
