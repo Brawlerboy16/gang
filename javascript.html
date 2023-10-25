@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>java</title>
+    <style>
+        body {
+            background: black;
+            color: yellowgreen;
+        }
+    </style>
 
 </head>
 
@@ -300,28 +306,176 @@
         // }
         // for (n = 5; n < 20; n++) {
         //     if (n % 2 == 0) {
-        //         continue;
+        //         continue;,
         //     }
         //     console.log(`${n}`)
         // }
         // for (i = 2; i < 10; i++) {
         //     console.log(`${i}`)
         // }
-        let i = 2;
-        while (i < 100000) {
-            document.write(i);
-            i++
-        }
-        // i % n == 0
+        // let i = 2;
+        // while (i < 100000) {
+        //     document.write(i);
+        //     i++cc
+        // }
+        // i % n == 0c
         // n = prompt(enter prime no)
         // for (i = 20, i < n, i++) {
         //     if (i % n == 0) {
         //         alert(yes n is a primeno)
         //         break;
-        //     }
+        //     }d
         // }
+        // let temp = [1, 2, -2, 0, 3, 4, 5];
+        // let newi = temp.filter(e => e >= 2)
+        // console.log(newi)
+        // let sqrN = newi.map(d => d * d);
+        // alert(sqrN)
+        // let x = 'dan is a good dan';
+        // console.log(x.indexOf('dan'))
+        //     let x = ['john', 'chike', 'idris', 'olu']
+        //     console.log(x.slice(2, 4))
+
+        //     function come() {
+        //         let a = document.getElementById('kenny').innerHTML;
+        //         let b = a.replace('store', 'office')c
+        //         document.getElementById('kenny').innerHTML = b;
+        //     }
+        // let x = ' victor'
+        // x.match('vic');
+        // console.log(x)
+        // function duke() {
+        //     let num = document.getElementById('num').value
+        //     let password = document.getElementById('password').value
+        //     if (isNaN(num) || !num) {
+        //         document.getElementById('taz').innerHTML = "INVALID"
+        //         document.getElementById('taz').style.color = 'red'
+        //     }
+        //     else if (num >= 18) {
+        //         document.getElementById('taz').innerHTML = "VALID"
+        //         document.getElementById('taz').style.color = 'green'
+        //     }
+        //     else if (num <= 18) {
+        //         document.getElementById('taz').innerHTML = "INVALID"
+        //         document.getElementById('taz').style.color = 'red'
+        //     }
+        //     if (!password) {
+        //         document.getElementById('wat').innerHTML = "INVALID"
+        //         document.getElementById('wat').style.color = 'red'
+        //     }
+        //     else {
+        //         if (password.length <= 5) {
+        //             document.getElementById('wat').innerHTML = "Your password should be greater than 5 digit"
+        //             document.getElementById('wat').style.color = 'red'
+        //         }
+        //         else if (password.length >= 20) {
+        //             document.getElementById('wat').innerHTML = "Your password must not be greater than 20 digit"
+        //             document.getElementById('wat').style.color = 'red'
+        //         }
+        //         else if (password.length > 5 || password.length < 20) {
+        //             document.getElementById('wat').innerHTML = "VALID"
+        //             document.getElementById('wat').style.color = 'green'
+        //         }
+        //     }
+
+        // }
+        // function saz() {
+
+        //     let pass = document.getElementById('myvalue').innerHTML = myvalue;
+        //     // let myvalue = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+
+        //     if (!/^\d{1,2}\/\d{1,2}\/\d{4}$/) {
+        //         document.getElementById('messi').innerHTML = "INVALID"
+        //         document.getElementById('messi').style.color = 'red'
+        //     }
+        //     else {
+        //         document.getElementById('messi').innerHTML = "VALID" 
+        //         document.getElementById('messi').style.color = 'green'
+        //     }
+
+        // }
+        function validate() {
+            let mynumber = /^[0-9]+$/;
+            let emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+            let nam = document.form1.Name.value;
+
+
+            if (nam == '') {
+                alert('provide your name');
+                document.form1.Name.focus();
+                return false;
+            }
+
+            if (document.form1.numb.value.match(mynumber)) {
+                alert('provide your age');
+                document.form1.numb.focus();
+                return false;
+            }
+            if (!document.form1.mail.value.match(emailformat)) {
+                alert('Provide your email');
+                document.form1.mail.focus();
+                return false;
+            }
+            if (!document.form1.zip.value.length != 5 || !document.form1.zip.value == '' || isNaN(!document.form1.zip.value)) {
+                alert('zip code must be 15 digits');
+                document.form1.zip.focus();
+                return false;
+            }
+            if (document.form1.cunt.value == '-1') {
+                alert('select your country')
+                document.form1.cunt.focus();
+                return false;
+            }
+            else {
+                return true;
+
+            }
+        }
+
 
     </script>
+
+    <!-- <div style="text-align: center;">
+        <label for="text">username:</label>
+        <input type="text" id="myvalue">
+        <p id="messi"></p>
+        <button onclick="saz()">click</button>
+    </div> -->
+    <!-- <h1 id="kenny">welcome to our store</h1>
+    <button onclick="come()">check</button> -->
+    <!-- <div style="text-align: center;">
+        <input type="text" placeholder="age" id="num">
+        <p id="taz"></p>
+        <input type="password" id="password"><br><br>
+        <p id="wat"></p>
+        <button id="cank" onclick="duke()">SUMBIT</button>
+
+
+
+    </div> -->
+    <div style="text-align: center;">
+        <form action="" name="form1" onSubmit="return(validate())">
+            <label for="text">Name:</label>
+            <input type="text" name="Name"><br><br>
+            <label for="text">Your age:</label>
+            <input type="text" name="numb"><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email " name="mail"><br><br>
+            <label for="text">Zip code</label>
+
+            <input type="text" name="zip"><br><br>
+            <label for="select">Country:</label>
+            <select name="cunt" id="">
+                <option value="-1">select your country</option>
+                <option value="1">USA</option>
+                <option value="2">UK</option>
+                <option value="3">NIGERIA</option>
+
+            </select><br><br>
+            <input type="submit">
+
+        </form>
+    </div>
 </body>
 
-</html>
+</html>,gm

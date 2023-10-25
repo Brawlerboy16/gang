@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>NOLO</title>
+    <style>
+        input::placeholder {
+            word-wrap: break-word;
+            white-space: wrap;
+        }
+
+        .online {
+            font-weight: lighter;
+        }
+
+        .tea {
+            font-size: 17px;
+            font-weight: 800;
+            color: black;
+        }
+
+        .real {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+
+
+        }
+
+        .daniel {
+            padding-top: 55px;
+            padding-bottom: 25px;
+            background: #0a3055;
+            color: white;
+            width: 110%;
+        }
+
+        .how {
+            margin-left: 23px;
+            line-height: 17px;
+            margin-top: 9px;
+        }
+
+        .ow {
+            margin-left: 8px;
+            margin-top: 7px;
+            line-height: 17px;
+        }
+
+        .al {
+            font-weight: 600;
+        }
+
+        .saka {
+            margin-left: 3%;
+        }
+
+        .sza {
+            display: flex;
+            flex-direction: row;
+            margin-top: 73px;
+        }
+
+        .div1 {
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+        }
+
+        .air {
+            font-size: 10px;
+            margin-bottom: 29px;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        .shiva {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 43%;
+        }
+
+        .iva {
+            display: flex;
+            flex-direction: row;
+            margin-top: 28px;
+            justify-content: space-around;
+
+        }
+
+        .shiva ul {
+            color: white;
+            line-height: 45px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .shitan {
+            width: 98%;
+            padding: 22px;
+            border-radius: 4px;
+            border: none;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+            background: #2093d2;
+        }
+
+        .shitan :hover {
+            background: grey;
+        }
+
+        .sizu {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .sazu {
+            font-size: 13px;
+            width: 97%;
+            padding-bottom: 34px;
+            height: 100px;
+
+
+        }
+
+        .duc {
+            color: white;
+            text-align: center;
+            font-size: 23px;
+            font-weight: 800;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 69%;
+            margin-top: 15px;
+
+        }
+
+        .izu {
+            padding: 12px;
+            width: 96%;
+        }
+
+
+        .oluwa {
+            font-weight: lighter;
+            font-size: 18px;
+        }
+
+        .nect {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .rat {
+            font-size: 23px;
+        }
+
+        .zaza {
+            margin-top: 33px;
+        }
+
+        .ats {
+            font-weight: lighter;
+        }
+
+        .rizz {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .shizi {
+            margin-left: 1%;
+        }
+
+        .shit {
+            color: rgb(30, 30, 207);
+
+        }
+
+        .shit:hover {
+            text-decoration: underline;
+        }
+
+        .jeko {
+            padding-top: 23px;
+            padding-bottom: 20px;
+        }
+
+        .ridwan {
+            padding-top: 86px;
+            padding-bottom: 46px;
+        }
+
+        .noon {
+            display: flex;
+            flex-direction: row;
+
+
+            justify-content: space-between;
+        }
+
+        .sp1 {
+            font-size: 17px;
+            font-weight: 600;
+
+        }
+
+        .sp2 {
+            font-size: 19px;
+            font-weight: 600;
+            margin-top: 11px;
+        }
+
+        .p1 {
+            font-size: 29px;
+            font-weight: 700;
+        }
+
+        .ashes {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .daswan {
+            border-right: 1px solid black;
+            color: black;
+            background: white;
+            padding: 9px;
+            width: 150px;
+            font-size: 17px;
+
+        }
+
+        .daswan :hover {
+            border-right: 1px solid black;
+            color: black;
+            background: white;
+            padding: 9px;
+            width: 150px;
+            font-size: 19px;
+
+        }
+
+        #sasa {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-weight: lighter;
+            font-size: 18px;
+        }
+
+        .asw {
+            color: black;
+
+        }
+
+
+        .adn {
+            width: 780px;
+            margin-top: 19px;
+        }
+
+        .sadq {
+            padding: 12px;
+            width: 170px;
+            background: white;
+            color: gray;
+            font-size: 17px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .astro {
+            padding: 9px;
+            width: 520px;
+            background: white;
+            color: gray;
+            border-radius: 5px;
+            margin-left: -7px;
+            font-size: 17px;
+            border: none;
+            outline: none;
+        }
+
+        .awa {
+            font-size: 25px;
+            color: white;
+            font-weight: lighter;
+        }
+
+        .wagawa {
+
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 42px;
+            color: white;
+
+        }
+
+        .raswan {
+            font-size: 21px;
+            color: black;
+
+
+        }
+
+        .dasta {
+            border: none;
+            outline: 1px solid none;
+            border-radius: 4px;
+            box-shadow: 0px 2px 5px 2px rgb(233, 229, 229);
+
+
+
+        }
+
+        .richy {
+            text-align: center;
+            color: white;
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .ichy {
+            background: #0a3055;
+            height: 6%;
+            padding: 3px;
+        }
+
+        .snas {
+            width: 420px;
+        }
+
+        .roas {
+            margin-left: -12px;
+        }
+
+        .nuke {
+            padding-left: 32px;
+        }
+
+        .ler {
+            border: none;
+        }
+
+        .daswa {
+            margin-top: -15px;
+        }
+
+        .gans:hover {
+            color: orangered;
+        }
+
+        .share {
+            font-weight: lighter;
+        }
+
+        .corn {
+            width: 93%;
+
+        }
+
+        .ass {
+            display: none;
+        }
+
+        .odu {
+            background: rgb(187, 57, 10);
+            color: white;
+            padding: 10px;
+            margin-left: 15px;
+            font-size: 19px;
+            border: none;
+            border-radius: 5px;
+            width: 120px;
+        }
+
+        .lex {
+            border: 1px solid black;
+        }
+
+        .help {
+            font-size: 17px;
+            font-weight: lighter;
+            line-height: 1.5555555556;
+            display: block;
+
+        }
+
+        .hit {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+
+        }
+
+        .hit ul {
+            list-style-type: none;
+            font-weight: lighter;
+            color: gray;
+            line-height: 32px;
+
+
+        }
+
+        .hush {
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+
+        .shiza .gans {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1rem;
+            color: black;
+            padding-left: 32px;
+
+        }
+
+        .shizan {
+            line-height: 19px;
+        }
+
+        .hair {
+            line-height: 12px;
+        }
+
+        .ounda {
+            display: flex;
+            flex-direction: rowx;
+        }
+
+        .warm {
+            font-size: 28px;
+            color: white;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .mean {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sara {
+            font-size: 14px;
+        }
+
+        .owl {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 15%;
+        }
+
+        .apes {}
+
+        .gal {
+            font-weight: lighter;
+        }
+
+        .wl {
+
+            justify-content: space-between;
+            width: 20%;
+        }
+
+        .spa {
+            font-size: 9px;
+            font-weight: 600;
+        }
+
+        .gro {
+            background: green;
+            width: 102%;
+        }
+
+        .gal:hover {
+            font-weight: lighter;
+            text-decoration: underline;
+        }
+
+        .rasa {
+            color: black;
+
+            font-weight: 700;
+        }
+
+        .cola {
+            margin-top: 19px;
+        }
+
+        @media screen and (max-width:768px) {
+            .raswan {
+                margin-top: 13px;
+
+            }
+
+            .ass {
+                display: inline-block;
+            }
+
+
+            .elf {
+                text-align: center;
+            }
+
+            .saka {
+                margin-left: 1%;
+            }
+
+            .noon {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .daniel {
+                padding-top: 55px;
+                padding-bottom: 25px;
+                background: #0a3055;
+                color: white;
+                width: 95%;
+            }
+
+            .sza {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .corn {
+                width: 95%;
+
+            }
+
+            .sad {
+                display: none;
+            }
+
+            .wagawa {
+                font-size: 40px;
+            }
+
+            .mean {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .rizz {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .owl {
+                display: flex;
+                flex-direction: row;
+                justify-content: none;
+                width: 62%;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div class="container">
+            <p><img src="Projectimgs/nolo1.PNG" alt=""></p>
+            <p><i class="bi bi-search"></i><
+                /p>
+            <p> <i class="bi bi-cart2"></i></p>
+            <p></p>
+            <p>Grow Your Legal Practice</p>
+        </div> -->
+
+
+
+    <div>
+        <div class="container div1 col-xl-9 cola ">
+            <div class="col-xl-10 	d-sm-none d-md-block 	d-none d-sm-block d-md-none d-lg-block">
+                <p><img src="Projectimgs/nolo1.PNG" alt=""></p>
+            </div>
+            <div class="gal d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block">
+                <p>Grow Your Legal Practice</p>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg daswa">
+        <div class="container-fluid  col-xl-12">
+            <a class="navbar-brand 	d-xxl-none" href="#"><img src="Projectimgs/nolo1.PNG" alt=""></a>
+            <button class="navbar-toggler ler" type="button" data-bs-toggle="collapse" data-bs-target="#ontent"
+                aria-controls="ontent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="bi bi-search rasa"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="ontent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <form class="d-flex d-block d-sm-none" role="search">
+                        <select name="" id="">
+                            <option value="">All</option>
+                            <option value="">DIY Products</option>
+                            <option value="">Lawyers</option>
+                            <option value="">Articles</option>
+                            <option value="">Dictionary</option>
+                        </select><br>
+                        <input placeholder="">
+                    </form>
+            </div>
+            <button class="navbar-toggler ler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span> <i class="bi bi-cart2 roas"></i></span>
+            </button>
+            <button class="navbar-toggler ler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars asw"></i></span>
+            </button>
+            <div class="collapse navbar-collapse apes container-fluid col-xl-9" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item col-xl-3">
+                        <a class="nav-link  gans" aria-current="page" href="#">SHOP BY PRODUCTS</a>
+                    </li>
+                    <li class="nav-item col-xl-3">
+                        <a class="nav-link  gans" href="#">FIND A LAWYER</a>
+                    </li>
+                    <li class="nav-item dropdown    col-xl-7">
+                        <a class="nav-link   gans dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            LEGAL ARTICLES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Accidents & Injuries</a></li>
+                            <li><a class="dropdown-item" href="#"> Bankruptcy</a></li>
+                            <li><a class="dropdown-item" href="#"> Business Formation: LLCs & Corporations</a></li>
+                            <li><a class="dropdown-item" href="#"> Car Accidents</a></li>
+                            <li><a class="dropdown-item" href="#"> COVID-19: Laws And Your Rights</a></li>
+                            <li><a class="dropdown-item" href="#"> Criminal Law</a></li>
+                            <li><a class="dropdown-item" href="#"> Debt Management</a></li>
+                            <li><a class="dropdown-item" href="#"> Disability Law</a></li>
+                            <li><a class="dropdown-item" href="#"> Divorce & Family Law</a></li>
+                            <li><a class="dropdown-item" href="#"> DUI / DWI & Traffic Tickets</a></li>
+                            <li><a class="dropdown-item" href="#"> Employment Law</a></li>
+                            <li><a class="dropdown-item" href="#"> Foreclosure</a></li>
+                            <li><a class="dropdown-item" href="#"> Immigration</a></li>
+                            <li><a class="dropdown-item" href="#"> Landlords</a></li>
+                            <li><a class="dropdown-item" href="#"> LGBT Law</a></li>
+                            <li><a class="dropdown-item" href="#"> Nonprofits</a></li>
+                            <li><a class="dropdown-item" href="#"> Patent, Copyright & Trademark</a></li>
+                            <li><a class="dropdown-item" href="#"> Personal Finance</a></li>
+                            <li><a class="dropdown-item" href="#"> Real Estate</a></li>
+                            <li><a class="dropdown-item" href="#"> Small Business</a></li>
+                            <li><a class="dropdown-item" href="#"> Small Claims Court & Lawsuits</a></li>
+                            <li><a class="dropdown-item" href="#"> Social Security & Retirement</a></li>
+                            <li><a class="dropdown-item" href="#"> Tenants</a></li>
+                            <li><a class="dropdown-item" href="#"> Taxes</a></li>
+                            <li><a class="dropdown-item" href="#"> Wills, Trusts & Probate</a></li>
+                            <li><a class="dropdown-item " href="#"> Workers' Compensation</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item d-block d-sm-none">
+                        <a class="nav-link nuke" href="#">
+                            Grow Your Legal Practice</a>
+                    </li>
+                    <li class="nav-item  d-block d-sm-none ">
+                        <a class="nav-link nuke" href="#">
+                            Meet the Editors</a>
+                    </li>
+
+                    <li class="nav-item " id="tmes">
+                        <a class="nav-link gans snas" href="#">SIGN IN <span class="dsa">|</span> <i
+                                class="bi bi-cart2 far"></i></a>
+                    </li>
+                    <hr>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <div style="background: #0a3055; " class="ridwan">
+        <div class=" container ashes col-xl-9">
+            <div class="row">
+                <p class="wagawa">Legal Help. Simple. Trusted.</p>
+                <p class="awa">Find DIY Products, attorneys, and articles.</p>
+                <div class="	d-none d-sm-block">
+                    <div class="input-group mb-3 adn  ">
+                        <button class="btn  btn-outline dropdown-toggle daswan" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">All</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">All </a></li>
+                            <li><a class="dropdown-item" href="#">DIY Products</a></li>
+                            <li><a class="dropdown-item" href="#">Lawyers</a></li>
+                            <li><a class="dropdown-item" href="#">Articles</a></li>
+
+
+                        </ul>
+                        <input placeholder="Legal Issue e.g.:Bankruptcy.etc" class="form-control col-xl-9"
+                            aria-label="Text input with dropdown button" id="sasa">
+                        <div class="">
+                            <div>
+                                <button class="odu">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-none d-sm-block">
+                <p><img src="Projectimgs/scales.PNG" alt=""></p>
+            </div>
+        </div>
+
+    </div>
+    <div style="background: #0f4880;color: white;" class="jeko">
+        <div class="container noon col-xl-8">
+            <div class="owl">
+                <p class="p1 ">50</p> <span class="sp1">Years of Legal <br class="sad">Authority</span>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <span class="p1">1.7M+</span>
+                <span class="sp2">
+                    Products Sold</span>
+            </div>
+            <div style="display: flex; flex-direction: row;" class="wl">
+                <p class="p1">30k</p><span class="sp1">Local Attorneys <span class="sad">in <br class="sad">Our
+                        Network</span></span>
+            </div>
+            <div style="display: flex; flex-direction: row;" class="owl">
+                <p class="p1">1M+</p>
+                <span class="sp1">
+                    Consultation<br class="sad"> Requests</span>
+            </div>
+        </div>
+    </div>
+    <div class="sza container col-xl-9">
+        <div class="">
+            <div class="">
+                <div class="elf">
+                    <h4>DIY Products</h4>
+                    <p class="help">Thousands of do-it-yourself products, including legal forms, online documents, books
+                        and
+                        ebooks,
+                        <br class="sad">and
+                        software. Generate a customized estate planning form like a will, a <span class="shit">living
+                            trust</span>, or a
+                        <span class="shit">power of<br class="sad">
+                            attorney</span> in just minutes. Get all the most common business forms you'll need to
+                        operate
+                        your<br class="sad">
+                        business, or <span class="shit">create an LLC</span> yourself. Our products are in plain
+                        English,
+                        created
+                        and updated
+                        by<br class="sad">
+                        attorneys and legal editors.
+                    </p>
+                </div>
+                <div>
+                    <div class="dasta col-xl-12">
+                        <div class="ichy">
+                            <p class="richy">Nolo’s #1 Bestseller</p>
+                        </div>
+
+                        <div class="mean">
+                            <div class="rizz col-xl-7">
+                                <div>
+                                    <p><img src=" Projectimgs/copcar.PNG" alt="">
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="hush">Quicken<br class="sad"> WillMaker &<br class="sad"> Trust</h3>
+                                    <p class="share">
+                                        The leader in estate<br class="sad"> planning software,<br class="sad"> written
+                                        and
+                                        updated <br class="sad">regularly by
+                                        Nolo's<br class="sad">
+                                        attorneys
+                                        and legal <br class="sad">editors.</p>
+                                </div>
+
+                            </div>
+                            <div class="rizz">
+                                <div>
+                                    <p><img src="Projectimgs/yinn.PNG" alt=""></p>
+                                </div>
+                                <div>
+                                    <h3 class="hush">Online<br class="sad">
+                                        DIY Divorces</h3>
+                                    <p class="share"> Simple, affordable DIY<br class="sad"> divorce services. 100%<br
+                                            class="sad">
+                                        online.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zaza">
+                <div class="container col-xl-12">
+                    <div class="shiza " style="display: flex; flex-direction: row; ">
+                        <div class="">
+                            <p><img src="Projectimgs/booka.PNG" alt=""></p>
+                        </div>
+                        <div class="shizi">
+                            <h3 class="rat">Books</h3>
+                            <p class="ats">Written in plain English to help with your everyday legal needs.</p>
+                        </div>
+                    </div>
+                    <div class="shiza " style="display: flex; flex-direction: row; ">
+                        <div class="">
+                            <p><img src="Projectimgs/list.PNG" alt=""></p>
+                        </div>
+                        <div class="shizi">
+                            <h3 class="rat">Legal Forms</h3>
+                            <p class="ats">Create as many business and personal forms as you need with NoloCloud..</p>
+                        </div>
+                    </div>
+                    <div class="shiza " style="display: flex; flex-direction: row; ">
+                        <div class="">
+                            <p><img src="Projectimgs/disc.PNG " alt=></p>
+                        </div>
+                        <div class="shizi">
+                            <h3 class="rat">Software</h3>
+                            <p class="ats">Easy-to-use estate planning software to protect your family.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="saka">
+            <div class="col-xl-12 daniel">
+                <div class="container corn">
+                    <div class="">
+                        <p class="nect">Connect with attorneys for a free<br class="sad"> consultation</p>
+                        <p class="oluwa">We've helped 115 clients find an affordable <br class="sad">attorney today.</p>
+                    </div>
+                    <form action="" class="shizan">
+                        <label for="text" class="sizu">Full Name* </label><br>
+                        <input type="text" class="izu"><br><br>
+                        <label for="number" class="sizu">Phone*</label><br>
+                        <input type="number" class="izu"><br><br>
+                        <label for="email" class="sizu">Email*</label><br>
+                        <input type="email" class="izu"><br><br>
+                        <label for="email"><span class="sizu">Zip Code * </span> <span class="spa">(We ask for Zip to
+                                match
+                                you with
+                                local
+                                attorneys.)</span>
+                        </label><br>
+                        <input type="email" class="izu"><br><br>
+                        <label for="email" class="sizu">
+                            Briefly describe your case *</label><br>
+                        <input placeholder="please describe your legal situation in as much detail as possible"
+                            class="sazu"><br><br>
+                        <button class="shitan">Get Consultation</button>
+
+
+                    </form>
+                    <div class="hair">
+                        <p class="air">By submitting this form I agree to the Terms of Use and Privacy Policy and
+                            consent<br class="sad"> to
+                            be
+                            contacted by
+                            Martindale-Nolo and its affiliates, and up to three attorneys<br class="sad"> regarding this
+                            request and
+                            to
+                            receiving relevant marketing messages by <br class="sad">automated means, text and/or
+                            prerecorded
+                            messages
+                            at
+                            the
+                            number provided.<br class="sad"> Consent is not required as a condition of service, Click
+                            Here to agree
+                            without<br class="sad">
+                            providing consent to be contacted by automated means, text and/or<br class="sad">
+                            prerecorded messages.
+                            Rates
+                            may
+                            apply.
+                        </p>
+                        <p class="air">
+                            You should not send any sensitive or confidential information through this site.<br
+                                class="sad"> Any
+                            information
+                            sent through this site does not create an attorney-client<br class="sad"> relationship and
+                            may not be
+                            treated as
+                            privileged or confidential. The lawyer or<br class="sad"> law firm you are contacting is not
+                            required
+                            to,
+                            and
+                            may
+                            choose not to, accept<br class="sad"> you as a client. The Internet is not necessarily
+                            secure and emails
+                            sent
+                            through<br class="sad"> this site could be intercepted or read by third parties.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" d-block d-sm-none">
+        <div style="text-align: center;">
+            <p>Legal Encyclopedia</p>
+            Nolo has an extensive library of legal articles—all for free. The law can be hard to find, complex, and
+            intimidating. We strive to make it accessible to everyone—to help people find answers to their everyday
+            legal and business questions.
+        </div>
+        <div>
+            <div style="margin: auto; display: flex; flex-direction: column; justify-content: center; width: 85%;">
+                <div style="display: flex; flex-direction: row;" class="">
+                    <div>
+                        <p><img src="Projectimgs/bulb.PNG" alt=""></p>
+                    </div>
+                    <div class="how">
+                        <p class="al">Legal Know-How</p>
+                        <p class="online">Essential information about everyday legal <br>problems.</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <div>
+                        <p><img src="Projectimgs/save.PNG" alt=""></p>
+                    </div>
+                    <div class="how">
+                        <p class="al">Plain English
+                        </p>
+                        <p class="online">Detailed legal material in easy-to-understand <br>terms.</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <div>
+                        <p><img src="Projectimgs/face.PNG" alt=""></p>
+                    </div>
+                    <div class="ow">
+                        <p class="al">Professionally Written
+                        </p>
+                        <p class="online">Content created by attorneys and legal editors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-none d-xxl-block" style="margin-top: 84px;">
+        <div>
+            <img style="  width:30%; height: 400px; background-color 300ms; box-shadow: 0px 0px 5px 1px rgba(136, 136, 136,0.6); position: absolute; z-index: -2 ;"
+                src="file:///C:/Users/DELL/Desktop/VAL.PROJECT/Projectimgs/background_text%20(3).webp">
+        </div>
+        <br><br><br>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; width: 70%; margin: 0px auto;"
+            class="">
+            <div
+                style="border:none; background: white; box-shadow: 0px 0px 5px 1px rgba(136, 136, 136,0.6);padding: 13px;">
+                <div style="display: flex; flex-direction: row;" class="">
+                    <div>
+                        <p><img src="Projectimgs/bulb.PNG" alt=""></p>
+                    </div>
+                    <div class="how">
+                        <p class="al">Legal Know-How</p>
+                        <p class="online">Essential information about everyday legal <br>problems.</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <div>
+                        <p><img src="Projectimgs/save.PNG" alt=""></p>
+                    </div>
+                    <div class="how">
+                        <p class="al">Plain English
+                        </p>
+                        <p class="online">Detailed legal material in easy-to-understand <br>terms.</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <div>
+                        <p><img src="Projectimgs/face.PNG" alt=""></p>
+                    </div>
+                    <div class="ow">
+                        <p class="al">Professionally Written
+                        </p>
+                        <p class="online">Content created by attorneys and legal editors.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 style="font-weight: 700;">Legal Encyclopedia</h3>
+
+                <p style="font-size: 17px; font-weight: lighter;">Nolo has an extensive library of legal articles—<br>
+                    all for free. The law
+                    can be hard to
+                    find,<br>
+                    complex,
+                    and
+                    intimidating. We strive to make it<br> accessible to everyone—to help people find<br> answers to
+                    their
+                    everyday
+                    legal and business<br> questions.</p>
+                <button
+                    style="width: 75%; padding: 10px; background: #2093d2; color: white; font-size: 18px; font-weight: 600; border: none; border-radius: 4px;">Read
+                    Articles</button>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    <div style=" background: #0a3055; padding-bottom: 33px;  padding-top: 43px;">
+        <div>
+            <p class="warm">Popular Categories
+            </p>
+        </div>
+        <div class="real container col-xl-9 ">
+
+            <div class="duc container">
+                <div>
+                    <p>Products</p>
+                </div>
+                <div>
+                    <p>Lawyers</p>
+                </div>
+                <div>
+                    <p>Articles</p>
+                </div>
+            </div>
+        </div>
+        <div class="container iva col-xl-9">
+            <div class="shiva">
+                <ul style="list-style-type: none;">
+                    <li> Bankruptcy</li>
+                    <li> Criminal Law</li>
+                    <li> Debt Management</li>
+                    <li> Disability Law</li>
+                    <li> Divorce & Family Law</li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li> DUI & Traffic Violations</li>
+                    <li> Employment </li>
+                    <li> Estate Planning</li>
+                    <li> Foreclosure</li>
+                    <li> Immigration</li>
+
+                </ul>
+            </div>
+            <div class="shiva">
+                <ul style="list-style-type: none;">
+                    <li> Intellectual </li>
+                    <li> Landlords</li>
+                    <li> LLCs & Corporations</li>
+                    <li> Nonprofits</li>
+                    <li> Personal Injury</li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li>Real Estate</li>
+                    <li>Small Business</li>
+                    <li>Tenants</li>
+                    <li>Tax Law</li>
+                    <li>Workers' Compensation</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ass">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes
+                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                            can
+                            modify any of this with custom CSS or overriding our default variables. It's also worth
+                            noting
+                            that just about any HTML can go within the <code>.accordion-body</code>, though the
+                            transition
+                            does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row ; padding-top: 44px;" class="container ">
+        <div>
+            <img src="Projectimgs/portable.PNG" alt="">
+        </div>
+        <div class="hit">
+            <ul>
+                <li class="tea">Company Information</li>
+                <li>About Nolo</li>
+                <li>Careers</li>
+                <li>Press Room</li>
+                <li>Contact Us</li>
+                <li>Customer Service</li>
+                <li>Tech Support</li>
+            </ul>
+            <ul>
+                <li class="tea">Products & Services</li>
+                <li>Books & Software</li>
+                <li>New Arrivals &<br>Coupons</li>
+                <li>Bestsellers</li>
+            </ul>
+            <ul>
+                <li class="tea"> Lawyer Directory</li>
+                <li> Grow Your Practice</li>
+                <li> Find a lawyer</li>
+                <li> Lawyers by location</li>
+                <li> Tips on Hiring Lawyers</li>
+            </ul>
+            <ul>
+                <li class="tea"> Free Legal Information</li>
+                <li> Articles</li>
+                <li> Calculators</li>
+                <li> Legal Research</li>
+                <li> Newest Articles</li>
+            </ul>
+            <ul>
+                <li class="tea">Sales</li>
+                <li>Affiliates</li>
+                <li>Library</li>
+                <li>Trade</li>
+            </ul>
+        </div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items: center;">
+        <p class="sara" style="color: gray;">
+            Copyright ©2023 MH Sub I, LLC dba Nolo ® Self-help services may not be permitted in all states. The
+            information provided on this site is not legal<br class="sad"> advice, does not constitute a lawyer referral
+            service,
+            and no attorney-client or confidential relationship is or will be formed by use of the site. The<br
+                class="sad">
+            attorney listings on this site are paid attorney advertising. In some states, the information on this
+            website may be considered a lawyer referral service.<br class="sad"> Please reference the Terms of Use and
+            the
+            Supplemental Terms for specific information related to your state. Your use of this website constitutes<br
+                class="sad">
+            acceptance of the Terms of Use, Supplemental Terms, Privacy Policy and Cookie Policy.
+        </p>
+
+    </div>
+
+    <h3>PROJECTS</h3>
+    <ul>
+        <li><a href="customerlogin.html">Smile customer login</a></li>
+        <li><a href="digital inspiration.html">digital inspiration</a></li>
+        <li><a href="quicken.html">Quicken</a></li>
+        <li><a href="Whogohost.html">Whogohost</a></li>
+        <li><a href="Home-bridge.html">Home-brigde</a></li>
+    </ul>
+</body>
+
+</html>

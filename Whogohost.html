@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            background: rgb(9, 9, 210);
+
+        }
+
+        .ganr {
+            font-size: 39px;
+        }
+
+        .rasen {
+            display: flex;
+            flex-direction: row;
+            margin-top: 53px;
+            font-size: 15px;
+        }
+
+        .sen {
+            border-top: 1px solid white;
+        }
+
+        .rasen ul {
+            display: flex;
+            flex-direction: row;
+            font-size: 15px;
+
+
+        }
+
+        .robin {
+            padding-top: 90px;
+            padding-bottom: 1px;
+            background: #100f0f;
+            color: white;
+
+        }
+
+        .asew {
+            display: none;
+        }
+
+        .di1 {
+            margin-top: 9px;
+            margin-left: 15px;
+        }
+
+
+        .di2 {
+            padding: 15px;
+            width: 300px;
+            background: #100f0f;
+            border: 1px solid white;
+            border-radius: 8px;
+        }
+
+
+        .di3 {
+            padding: 16px;
+            border: none;
+            background: #fff;
+            width: 130px;
+            border-radius: 8px;
+        }
+
+        .godas {
+            padding-top: 70px;
+            padding-bottom: 60px;
+        }
+
+        .p23 {
+            background: white;
+            border: 1px solid black;
+            padding: 16px;
+            line-height: 12px;
+            border-radius: 4px;
+
+        }
+
+        .p23:hover {
+            background: #061375;
+            color: white;
+        }
+
+        .p24:hover {
+            background: #061375;
+            color: white;
+        }
+
+
+        .p24 {
+            background: white;
+            border: 1px solid black;
+            padding: 16px;
+            line-height: 12px;
+            border-radius: 4px;
+            margin-left: 29px;
+
+        }
+
+        .bow {
+            line-height: 77px;
+
+        }
+
+        .a56 {
+            font-size: 17px;
+            line-height: 23px;
+        }
+
+        .p0 {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 47px;
+        }
+
+        .iv1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tons {
+            width: 360px;
+            padding: 6px;
+            color: white;
+            background: #008ed5;
+            border: none;
+            border-radius: 4px;
+            margin-left: 1%;
+        }
+
+        .tons:hover {
+            width: 360px;
+            padding: 6px;
+            color: white;
+            background: #066ea2;
+            border: none;
+            border-radius: 4px;
+            margin-left: 1%;
+        }
+
+        .pwas {
+            padding-top: 150px;
+            padding-bottom: 100px;
+        }
+
+        .coes {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sumic {
+            font-size: 21px;
+            font-weight: 400;
+        }
+
+        .assa {
+            padding-top: 73px;
+            padding-bottom: 93px;
+        }
+
+        .gansa {
+            display: flex;
+            flex-direction: row;
+            width: 65%;
+            justify-content: space-between;
+
+        }
+
+        .gansa div {
+
+            width: 28%;
+            display: flex;
+            margin-top: 40px;
+
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .batman {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        .past {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+            list-style-type: none;
+        }
+
+        .eas {
+            text-align: center;
+            color: #0a1ca4;
+            font-weight: 700;
+        }
+
+        .cod {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+
+
+
+
+
+
+        }
+
+        .me {
+            font-size: 23px;
+        }
+
+        .you {
+            color: red;
+            font-size: 20px;
+        }
+
+        .they {
+            width: 179px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            background: white;
+            border: 1px solid black;
+            border-radius: 6px;
+
+        }
+
+        .they:hover {
+            color: white;
+            background: #146ece;
+        }
+
+        .roadman {
+            list-style-type: none;
+
+        }
+
+        .namt {
+            font-size: 20px;
+        }
+
+
+        .cola:hover {
+            color: white;
+        }
+
+        .dast {
+            background: white;
+            padding-top: 23px;
+            padding-left: 16px;
+            width: 20%;
+            padding-bottom: 23px;
+            border-radius: 12px;
+            margin-left: 32px;
+            border: white;
+
+
+        }
+
+        .orn {
+            margin-top: 107px;
+        }
+
+        .sp1 {
+            font-size: 14px;
+            margin-left: 7px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .corn {
+            position: absolute;
+            left: 19%;
+            margin-top: 55px;
+            width: 100%;
+        }
+
+        .man {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 79%;
+            margin-left: 7%;
+            margin-top: 7%;
+            padding-bottom: 29px;
+        }
+
+        .rh {
+            border-bottom: 1px groove rgb(208, 202, 202);
+
+        }
+
+        .ess {
+            text-align: center;
+            color: white;
+            font-size: 21px;
+
+        }
+
+        .ord {
+            color: white;
+            font-size: 21px;
+
+        }
+
+        .dasew {
+            padding: 12px;
+        }
+
+        .dasewa {}
+
+
+        .cola {
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+
+        .move {
+            margin-left: 450px;
+        }
+
+        .sp1:hover {
+            text-decoration: none;
+        }
+
+        .rasd {
+            width: 65%;
+            padding: 12px;
+            background: rgb(9, 9, 210);
+            font-size: 19px;
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+
+        }
+
+        .marg {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 59px;
+        }
+
+        .rasd:hover {
+            padding: 12px;
+            background: rgb(9, 9, 210);
+            font-size: 19px;
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            outline: 1px solid white;
+            width: 65%;
+
+        }
+
+        .wagwan {
+            padding-top: 9px;
+            padding-bottom: 12px;
+        }
+
+        .hound {
+            padding-top: 23px;
+        }
+
+        .word {
+            text-align: center;
+            color: white;
+            font-size: 48px;
+        }
+
+
+        .a1 {
+            text-decoration: none;
+        }
+
+        #wana {
+            margin-left: 50%;
+        }
+
+        .money {
+
+            background: #091ba5;
+            width: 100%;
+            height: 97px;
+
+        }
+
+        .rasta {
+            margin-top: 150px;
+            background: #f9f8f8;
+            padding-bottom: 94px;
+        }
+
+        .seas {
+            margin-top: 260px;
+        }
+
+        .horn {
+            color: yellow;
+        }
+
+        .has {
+            text-decoration: none;
+            color: white;
+            border: none;
+            border-radius: none;
+        }
+
+        .arse {
+            position: absolute;
+            left: 10px;
+            top: 30%;
+        }
+
+        .gad {
+            display: flex;
+            flex-direction: row;
+            margin-top: 59px;
+        }
+
+
+        @media screen and (max-width:768px) {
+            .sp1 {
+                display: none;
+            }
+
+            .man {
+                display: none;
+            }
+
+            .a3 {
+                margin-left: 15px;
+
+            }
+
+            .holder {
+                display: none;
+            }
+
+            .past {
+
+                display: flex;
+                flex: column;
+                width: 0%;
+                margin-top: 70px;
+                list-style-type: none;
+            }
+
+            .gansa {
+                display: flex;
+                flex-direction: column;
+
+                align-items: none;
+                margin: 0px auto;
+                width: 0%;
+                justify-content: none;
+            }
+
+            .a5 {
+                margin-left: 5px;
+            }
+
+            .seas {
+                margin-top: 934px;
+            }
+
+            .money {}
+
+            .ganf {
+                margin-left: 0px;
+            }
+
+            .cod {
+                display: flex;
+                flex-direction: column;
+                margin-left: 0%;
+
+            }
+
+            .gad {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header__section" style="background: #061375;">
+        <div class="container">
+            <div class="row wagwan">
+                <div class="col-md-6 col-6 ">
+                    <a href="#" class="a1"><img src="Projectimgs/phone-call.png" alt="" width="14px"> <span
+                            class="sp1">0700223322233</span></a>
+                    <a href="#" class="a1"><img src="Projectimgs/email icon.png" alt="" width="14px"><span
+                            class="sp1">support@whogohost.com</span> </a>
+                    <a href="#" class="a1"><img src="Projectimgs/whatsapp.png" alt="" width="14px"><span
+                            class="sp1">07068714313</span> </a>
+
+                </div>
+                <div class="col-md-6 col-6  ">
+                    <div style="margin-left: 20%;">
+                        <a href="#" class="a1 "> <span class="sp1">Make Money</span></a>
+                        <a href="#" class="a1 "> <span class="sp1">How to Pay</span></a>
+                        <a href="#" class="has">
+                            <div class="btn-group">
+                                <span type="button" class="btn dropdown-toggle " data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white;">
+                                    <img src="Projectimgs/1563979182.nigeria (1).svg" alt="">
+                                </span>
+                                <ul class="dropdown-menu dropdown-menu-end dasew">
+                                    <li><button class="dropdown-item" type="button"><img
+                                                src="Projectimgs/1564660326.kenya (2).svg" alt=""
+                                                width="14px"><span>-kenya</span></button></li>
+                                    <li><button class="dropdown-item" type="button"><img
+                                                src="Projectimgs/1563979399.ghana (1).svg" alt=""
+                                                width="14px"><span>-ghana</span></button></li>
+                                    <li><button class="dropdown-item" type="button"><img
+                                                src="Projectimgs/1564663705.worldwide.svg" alt=""
+                                                width="14px"><span>-global</span></button></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="has">
+                            <div class="btn-group">
+                                <span type="button" class="btn dropdown-toggle " data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white;">
+                                    ₦
+                                </span>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button class="dropdown-item" type="button">- ₦
+                                        </button></li>
+                                    <li><button class="dropdown-item" type="button"> USD - $</button></li>
+                                    <li><button class="dropdown-item" type="button"> Ksh - KSh</button></li>
+                                    <li><button class="dropdown-item" type="button">GH₵ - ₵</button></li>
+                                </ul>
+                            </div>
+                        </a>
+
+
+                        <span style="cursor: pointer;" class="a6"><img src="cap2.PNG" alt=""></span>
+                        <a href="#" class="a1 a4"><img src="Projectimgs/shopping-cart.png" alt=""></a>
+                        <a href="#" class="a1 a3" style="margin-left: 5px;"><img src="Projectimgs/account.png" alt=""
+                                width="14px"><span class="sp1">My
+                                Account</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: rgb(9, 9, 210);" id="top-header">
+        <nav class="navbar navbar-expand-lg rh">
+            <div class="container ner">
+
+                <a class="navbar-brand" href="#"><img src="Projectimgs/WhogoHost-Logo--nigeria (2).png" alt=""
+                        width="124px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon horn"></span>
+                </button>
+                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav col-auto " id="wana">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle cola" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Domains
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle cola" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hosting
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle cola" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Website
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle cola" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Solutions
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle cola" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="d ropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div class="orn">
+            <h3 class="word">Wordpress Websites Work Better With Wordpress<br> Hosting</h3>
+            <p class="ess"><span class="press">25% Off For New Users!</span> <a href="#" class="ord">Get Started</a></p>
+            <div class="marg">
+                <input placeholder="Search For a domain name (e.g.yourdomain.com " class="rasd ">
+                <!-- <svg width="24" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.792 22.781l-5.833-5.834a10.194 10.194 0 0 0 2.512-6.711C20.471 4.588 15.878 0 10.235 0 4.588 0 0 4.593 0 10.236 0 15.878 4.593 20.47 10.236 20.47c2.565 0 4.912-.947 6.711-2.512l5.834 5.833a.723.723 0 0 0 .506.213.72.72 0 0 0 .506-1.224zM1.432 10.236c0-4.855 3.95-8.799 8.798-8.799 4.854 0 8.799 3.95 8.799 8.799 0 4.848-3.944 8.803-8.799 8.803-4.849 0-8.798-3.95-8.798-8.804z" fill="#CED4DA"></path></svg> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class=" rasta ">
+        <div class="money ">
+            <div class="cod container ">
+                <div class="dast row">
+                    <h3 class="me">cPanel Hosting</h3>
+                    <p class="you">From N1,000.00/mo</p>
+                    <p class="them">Get secure and reliable <br> hosting accounts</p>
+                    <button class="they">Get Started</button>
+                </div>
+                <div class="dast row">
+                    <h3 class="me">Wordpress Hosting</h3>
+                    <p class="you">From N4,000.00/mo</p>
+                    <p class="them">Powered by AWS and perfect <br>for WordPress websites</p>
+                    <button class="they">Get Started</button>
+                </div>
+                <div class="dast row">
+                    <h3 class="me">Email Hosting</h3>
+                    <p class="you">From N1,000.00/mo</p>
+                    <p class="them">Get professional emails for<br> your business</p>
+                    <button class="they">Get Started</button>
+                </div>
+                <div class="dast row">
+                    <h3 class="me">Muzu</h3>
+                    <p class="you">From N3,500.00/mo</p>
+                    <p class="them">Dont know how to code? <br>Build a website in 10 minutes</p>
+                    <button class="they">Free Trial</button>
+                </div>
+            </div>
+        </div>
+        <div class="seas">
+            <h3 class="eas">We Provide Online Solutions For Businesses And Individuals</h3>
+            <div class="gansa container-fluid col-md-6">
+                <div><img src="Projectimgs/Cool-FM-Logo.svg" alt="" width="150px"><img src="Projectimgs/nuc-logo.png"
+                        alt="" width="65.70px" class=""></div>
+                <div><img src="Projectimgs/slot-logo.svg" alt="" width="151px"> <img src="Projectimgs/GTBank-Logo.svg"
+                        alt="" width="69.16px"></div>
+                <div><img src="Projectimgs/seamfix.png" alt="" width="150px" height="25px" style="margin-top:23px;"><img
+                        src="Projectimgs/dragnet.png" alt="" width="70px"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div style="background: white; " class="assa">
+        <div>
+            <h2 style="color: rgb(9, 9, 210);text-align: center; font-weight: 700;">Why Choose WhoGoHost?</h2>
+            <p style="text-align: center; font-size: 24px; line-height: 42px;color:rgb(22, 21, 21);">Over the
+                years, 40,000+
+                companies and
+                institutions have<br>
+                trusted us to
+                deliver excellent
+                services</p>
+        </div>
+        <div class="container gad">
+            <div class=" row" style="text-align: center;">
+                <p> <img src="Projectimgs/no.1.png" alt="" width="50px" height="50px"></p>
+                <h5 style="font-weight: 400;">West Africa's No. 1 Hosting Provider</h5>
+                <p style="font-size: 14px;">We are West Africa's largest and most popular web<br> hosting provider,
+                    supporting businesses,
+                    enterprises <br>and individuals for the past 12 years and counting.</p>
+            </div>
+            <div class="row" style="text-align: center;">
+                <p> <img src="Projectimgs/wide-range-of-offerings.svg" alt="" width="50px" height="50px"></p>
+                <h5 style="font-weight: 400;">West Africa's No. 1 Hosting Provider</h5>
+                <p style="font-size: 14px;">With our growing number of offerings, we are your one-<br>stop shop for
+                    anything you and your
+                    business
+                    needs to<br> succeed online.
+
+                </p>
+            </div>
+            <div class="row" style="text-align: center;">
+                <p> <img src="" alt="" width="50px" height="50px"></p>
+                <h5 style="font-weight: 400;">West Africa's No. 1 Hosting Provider</h5>
+                <p style="font-size: 14px;">Our 24/7 award-winning support team is available to<br> handle any requests
+                    you may have. Whatever
+                    you
+                    may<br> need, we are just a click away.</p>
+            </div>
+        </div>
+    </div>
+    <div style="background: #f9f8f8;" class="pwas">
+        <div class="container coes col-xl-9">
+            <div class="row " style="text-align: left;">
+                <p><img src="Projectimgs/1st.PNG" alt=""></p>
+                <h3 style="font-weight: 700;">Our Customers Love Us!</h3>
+                <p class="sumic">We love to help our customers succeed. To make that<br>happen, we put our best to
+                    provide our
+                    customers
+                    with just<br> what they need... and more. No wonder they love doing<br> business with us.</p>
+                <button class="tons">Read what our clients have to say</button>
+            </div>
+            <div class="row">
+                <p><img src="Projectimgs/client-mage-group.png" alt="" width="540px" height="319.8px"></p>
+            </div>
+        </div>
+    </div>
+    <div style="background: white;" class="godas">
+        <div class="iv1 container col-xl-9">
+            <div class="row; col-xl-7 bow">
+                <p style="color: #091ba5;" class="p0">Different businesses, same<br> top class support</p>
+                <p class="a56">Our experts are on hand to help every step of the way. They offer<br> assistance, help
+                    with website
+                    migrations and ongoing tech support by<br> live chat, phone and ticket.</p>
+                <p style="cursor:pointer;"><img src="Projectimgs/phone2.PNG" alt=""> <span>070022332233</span> <img
+                        src="Projectimgs/email2.PNG" alt=""> <span>support@whogohost.com</span></p>
+                <p> <button class="p23">Chat with us now</button><button class="p24">Open a support ticket</button></p>
+            </div>
+            <div class="row ">
+                <p class=><img src="Projectimgs/backp.svg" alt="" width="445px" height="357.22px"></p>
+            </div>
+        </div>
+    </div>
+    <div class="robin">
+        <div class="container batman col-xl-11 ">
+            <div class="col-xl-4">
+                <p><img src="Projectimgs/logo-blue-white.png" alt="" width="191.63px" height="40px"></p>
+            </div>
+            <div style="text-align: center;" class="">
+                <h3 style="font-weight: light;">Subscribe to Our newsletter</h3>
+                <p style="font-size: 18px;">Get the latest information, updates and more</p>
+            </div>
+            <div class="di1">
+                <input placeholder="name@email.com" class="di2"><br class="asew">
+                <button class="di3">Subscribe</button>
+            </div>
+        </div>
+        <div class="man container ">
+            <div>
+                <ul class="roadman">
+                    <li class="namt"> Hosting</li><br>
+                    <li> Web Hosting</li>
+                    <li> Reseller Hosting</li>
+                    <li> Local Servers in Nigeria</li>
+                    <li> Hosting Transfer</li>
+                    <li> Cloud Hosting</li>
+                    <li> Google Workspace</li>
+                    <li> Microsoft 365</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="roadman">
+                    <li class="namt"> Domains</li>
+                    <br>
+                    <li> Domain Registration</li>
+                    <li> Domain Transfer</li>
+                    <li> Domain Reseller</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="roadman">
+                    <li class="namt"> Services</li>
+                    <br>
+                    <li> SSL Certificate</li>
+                    <li> Site Builder</li>
+                    <li> Web Design</li>
+                    <li> Website Protection</li>
+                    <li> Website Backup</li>
+                    <li> Domain Reseller API</li>
+                    <li> Whogohost Enterprise</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="roadman">
+                    <li class="namt">Company</li>
+                    <br>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Announcements</li>
+                    <li>Affiliate System</li>
+                    <li>Terms Of Service</li>
+                    <li>Our Blog</li>
+                    <li>Merger and Acquisition</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="roadman">
+                    <li class="namt"> Support</li>
+                    <br>
+                    <li> Client Login</li>
+                    <li> Knowledge Base</li>
+                    <li> Downloads</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="roadman">
+                    <li class="namt">STAY CONNECTED</li>
+                    <br>
+                    <li><span><i class="fa-brands fa-square-twitter ganr"></i></span> <span>
+                            <i class="fa-brands fa-square-facebook ganr"></i></span> <span><i
+                                class="fa-brands fa-linkedin ganr"></i></span></li>
+                    <li><span><i class="fa-brands fa-youtube ganr"></i></span> <span><i
+                                class="fa-brands fa-square-instagram ganr"></i></span></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="sen">
+            <div class="rasen container">
+                <p class="col-xl-9">© 2023 Whogohost Limited African #1 Domain and Hosting Provider.</p>
+                <ul style="list-style-type: none; ">
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Refund Policy</li>
+                </ul>
+            </div>
+        </div>
+        <h3>PROJECTS</h3>
+        <ul>
+            <li><a href="customerlogin.html">Smile customer login</a></li>
+            <li><a href="digital inspiration.html">digital inspiration</a></li>
+            <li><a href="quicken.html">Quicken</a></li>
+            <li><a href="Whogohost.html">Whogohost</a></li>
+            <li><a href="Home-bridge.html">Home-brigde</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
