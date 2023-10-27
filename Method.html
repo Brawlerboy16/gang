@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Methods</title>
+    <style>
+        body {
+            background: black;
+            color: yellowgreen;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dasw {
+            color: black;
+            border: 1px solid yellowgreen;
+            border-radius: 16px;
+            position: fixed;
+            margin-top: 97px;
+            left: 95%;
+            width: 50px;
+            padding: 12px;
+            background: greenyellow;
+        }
+
+        .ody {
+
+            background: rgb(6, 5, 5);
+            outline: 1px solid yellowgreen;
+
+        }
+
+        .dy {
+            background: yellowgreen;
+            outline: 1px solid yellowgreen;
+
+        }
+
+        .west {
+            color: yellowgreen;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn dasw" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">JS</button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header dy">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class=" btn-close hoes" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ody">
+            <ul>
+                <li><a href="JSASSESSMENT.html" class="west">Main Page</a></li>
+                <li><a href="JShistory.html" class="west">JShistory</a></li>
+                <li><a href="JScalculator1.html" class="west">JScalculator</a></li>
+                <li><a href="JScalculator.html" class="west">JS invstment calculator</a></li>
+                <li><a href="jsswitch.html" class="west">JSswitch</a></li>
+                <li><a href="JSloop.html" class="west">JSLOOP</a></li>
+                <li><a href="JSloancalculator.html" class="west">JS loan calculator</a></li>
+                <li><a href="Method.html" class="west">JS Method</a></li>
+                <li><a href="JSfunction.html" class="west">JS function</a></li>
+                <li><a href="JSaccomodation.html" class="west">JS accomodation</a></li>
+                <li><a href="game.html" class="west">JS game</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h1>JavaScript Math Functions</h1>
+        <h4> The Math functions consist of methods and properties. Following is the list
+            of methods used with the Math
+            object:</h4>
+        <div>
+            <h2> 1. Math.round()</h2>
+            <p style="font-size: 17px;"> This method provides the value of the given number to a rounded integer. It can
+                be written as:
+                Math.round(x), where x is a number.
+            <h3>Examples:</h3>
+
+            <ul style="font-weight: lighter">
+
+                <li style="font-weight: lighter;">Math.round(4.6);</li>
+                <li>Math.round(4.5);</li>
+                <li>Math.round(4.4);</li>
+                <li>Math.round(3.6);</li>
+                <li>Math.round(5.4);</li>
+            </ul>
+            </p>
+        </div>
+        <h2>2. Math.floor()</h2>
+        <p style=" font-size: 17px;">Math.floor(x) returns the value of x rounded down to its nearest integer</p>
+        <h3> Examples:</h3>
+        <ul style="font-weight:lighter;">
+            <li>Math.floor(4.9);</li>
+            <li>Math.floor(4.7);</li>
+            <li>Math.floor(4.4);</li>
+            <li>Math.floor(4.2);</li>
+            <li>Math.floor(-4.2);</li>
+        </ul>
+        <h2> 3. Math.sqrt()</h2>
+        <p style="font-size:17px ;"> It gives the square root of a given integer. It can be written as:
+            Math.sqrt(x), where x is a number.</p>
+        <h3>Examples:</h3>
+        <ul style="font-weight: lighter;">
+            <li>Math.sqrt(64);</li>
+            <li>Math.sqrt(9);</li>
+            <li>Math.sqrt(16);</li>
+            <li>Math.sqrt(4);</li>
+            <li>Math.sqrt(100);</li>
+        </ul>
+
+        <h2> 4. Math.abs()</h2>
+        <p style="font-size: 17px;"> It provides the absolute i.e. positive value of a number. It can be written as:
+            Math.abs(x); where x is a number. </p>
+        <h3>Examples:</h3>
+        <ul style="font-weight: lighter;">
+            <li>Math.abs(-4.7);</li>
+            <li>public class AbsExample1<br>
+                {<br>
+                public static void main(String args[])<br>
+                {<br>
+                int x = 78;<br>
+                int y = -48;<br>
+                //print the absolute value of int type<br>
+                System.out.println(Math.abs(x));<br>
+                System.out.println(Math.abs(y));<br>
+                System.out.println(Math.abs(Integer.MIN_VALUE));<br>
+                }
+                }
+            </li>
+            <li>
+                public class AbsExample2<br>
+                {<br>
+                public static void main(String args[])<br>
+                {<br>
+                double x = -47.63;<br>
+                double y = -894.37;<br>
+                //print the absolute value of double type<br>
+                System.out.println(Math.abs(x));<br>
+                System.out.println(Math.abs(y));<br>
+                System.out.println(Math.abs(7.0 / 0));<br>
+                }
+                }
+            </li>
+            <li>
+                public class AbsExample3<br>
+                {<br>
+                public static void main(String args[])<br>
+                {<br>
+                float x = -73.02f;<br>
+                float y = -428.0f;<br>
+                //print the absolute value of float type<br>
+                System.out.println(Math.abs(x));<br>
+                System.out.println(Math.abs(y));<br>
+                }
+                }
+            </li>
+            <li>
+                public class AbsExample4<br>
+                {<br>
+                public static void main(String args[])<br>
+                {<br>
+                long x = 78730343;<br>
+                long y = -4839233;<br>
+                //print the absolute value of long type<br>
+                System.out.println(Math.abs(x));<br>
+                System.out.println(Math.abs(y));<br>
+                System.out.println(Math.abs(Long.MIN_VALUE));<br>
+                }
+                }
+            </li>
+
+        </ul>
+
+        <h2>5. Math.log()</h2>
+        <p>Math.log(x) returns the natural logarithm of x.<br>
+            The natural logarithm returns the time needed to reach a certain level of growth:</p>
+        <p>note:Math.E and Math.log() are twins.</p>
+        <h3>Examples:</h3>
+        <ul style="font-weight: lighter;">
+            <li>Math.log(10);</li>
+            <li>Math.log(1);</li>
+            <li>Math.log(2);</li>
+            <li>Math.log(3);</li>
+            <li>Math.log(0);</li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div>
+            <div>
+                <h1>JavaScript String Methods/functions
+                </h1>
+                <h3>These are list of type of string methods:</h3>
+                <ul>
+
+                    <li>String length</li>
+                    <li>String slice()</li>
+                    <li>String substring()</li>
+                    <li>String substr()</li>
+                    <li>String replace()</li>
+                    <li>String replaceAll()</li>
+                    <li>String toUpperCase()</li>
+                    <li>String toLowerCase()</li>
+                    <li>String concat()</li>
+                    <li> String trim()</li>
+                    <li> String trimStart()</li>
+                    <li> String trimEnd()</li>
+                    <li> String padStart()</li>
+                    <li> String padEnd()</li>
+                    <li> String charAt()</li>
+                    <li> String charCodeAt()</li>
+                    <li> String split()</li>
+
+                </ul>
+                <h3>Following is the list
+                    of methods used with the string:</h3>
+                <h2>1. String slice()</h2>
+                <p style="font-size: 17px;">slice() extracts a part of a string and returns the extracted part in a new
+                    string.
+
+                    The method takes 2 parameters: start position, and end position (end not included).</p>
+                <h3>Examples:</h3>
+                <ul>
+                    <li>let text = "Apple, Banana, Kiwi";<br>
+                        let part = text.slice(7, 13);</li>
+                    <li>let text = "Apple, Banana, Kiwi";<br>
+                        let part = text.slice(7);</li>
+                    <li>let text = "Apple, Banana, Kiwi";
+                        let part = text.slice(-12);</li>
+                    <li>let text = "Apple, Banana, Kiwi";
+                        let part = text.slice(-12, -6);</li>
+                    <li></li>
+                </ul>
+                <h2>2.String substr()</h2>
+                <p>substr() is similar to slice().
+
+                    The difference is that the second parameter specifies the length of the extracted part.</p>
+                <h3>Examples:</h3>
+                <ul>
+                    <li>let str = "Apple, Banana, Kiwi";<br>
+                        let part = str.substr(7, 6);</li>
+                    <li>let str = "Apple, Banana, Kiwi";<br>
+                        let part = str.substr(7);</li>
+                    <li>
+                        let str = "Apple, Banana, Kiwi";<br>
+                        let part = str.substr(-4);
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h2>3. String Replace()</h2>
+                <p>The replace() method replaces a specified value with another value in a string:
+                    Note
+                    The replace() method does not change the string it is called on.<br>
+
+                    The replace() method returns a new string.<br>
+
+                    The replace() method replaces only the first match<br>
+
+                    If you want to replace all matches, use a regular expression with the /g flag set. See examples
+                    below.
+                </p>
+
+                <h3>Examples:</h3>
+                <ul>
+                    <l1>let text = "Please visit Microsoft and Microsoft!";<br>
+                        let newText = text.replace("Microsoft", "W3Schools")</l1><br>
+                    <l1>let text = "Please visit Microsoft!";<br>
+                        let newText = text.replace("MICROSOFT", "W3Schools");</l1><br>
+                    <l1>let text = "Please visit Microsoft and Microsoft!";<br>
+                        let newText = text.replace(/Microsoft/g, "W3Schools");</l1> <br>
+                    <l1></l1>
+                    <l1></l1>
+                </ul>
+                <h2>4. String ReplaceAll()</h2>
+                <p>In 2021, JavaScript introduced the string method replaceAll():</p>
+                <h3>Examples:</h3>
+                <ul>
+                    <li>text = text.replaceAll("Cats","Dogs");<br>
+                        text = text.replaceAll("cats","dogs");</li>
+                    <li>text = text.replaceAll(/Cats/g,"Dogs");
+                        text = text.replaceAll(/cats/g,"dogs");</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h2>5. String padEnd()</h2>
+                <p>The padEnd() method pads a string from the end.<br>
+                    It pads a string with another string (multiple times) until it reaches a given length.</p>
+                <h3>Examples:</h3>
+                <ul>
+                    <li>let text = "5";<br>
+                        let padded = text.padEnd(4,"0");</li>
+                    <li>
+                        let text = "5";<br>
+                        let padded = text.padEnd(4,"x"
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

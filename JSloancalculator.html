@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            color: yellowgreen;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .dy {
+            background: yellowgreen;
+            outline: 1px solid yellowgreen;
+
+        }
+
+        .ody {
+
+            background: rgb(6, 5, 5);
+            outline: 1px solid yellowgreen;
+
+        }
+
+        .west {
+            color: yellowgreen;
+            text-decoration: none;
+        }
+
+        .shizu {
+            color: yellowgreen;
+            background: black;
+            font-weight: lighter;
+            padding: 11px;
+            width: 225px;
+            border: 1px solid yellowgreen;
+            outline: 1px solid yellowgreen;
+        }
+
+        .dasw {
+            color: yellowgreen;
+            border: 1px solid yellowgreen;
+            border-radius: 16px;
+            position: absolute;
+            margin-top: 99px;
+            left: 95%;
+            width: 50px;
+            padding: 12px;
+        }
+
+        .hans {
+            margin-top: 19px;
+            padding: 12px;
+            width: 156px;
+            background: black;
+            color: yellowgreen;
+            border: 1px solid yellowgreen;
+            border-radius: 5px;
+        }
+
+        .hans:hover {
+            margin-top: 19px;
+            padding: 12px;
+            width: 156px;
+            background: yellowgreen;
+            color: black;
+            border: 1px solid yellowgreen;
+            border-radius: 5px;
+        }
+
+        .hizu {
+            color: yellowgreen;
+            background: black;
+            font-weight: lighter;
+            padding: 11px;
+            font-size: 12px;
+            width: 105px;
+            border: 1px solid yellowgreen;
+        }
+
+        .sas {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            border: 1px solid yellowgreen;
+            width: 340px;
+            max-width: 600px;
+            min-width: 300px;
+            height: 310px;
+            border-radius: 12px;
+            box-shadow: 0px 2px 5px 2px yellowgreen;
+            box-sizing: border-box;
+
+        }
+
+        .ashes {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .shes {
+            font-size: 15px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div style="text-align: center;" class="sas">
+        <div>
+            <h3>LOAN CALCULATOR</h3>
+            <label for="number" class="ashes">AMOUNT</label><br>
+            <input type="number" value="1" id="amount" class="shizu"><br>
+        </div>
+        <div style="display:flex; flex-direction: row; justify-content: center; margin-top: 12px;">
+            <div>
+                <label for="select" class="shes">DURATION</label><br>
+                <select name="" id="durate" class="hizu">
+                    <option value=" 1">1MONTH</option>
+                    <option value="2">2MONTH</option>
+                    <option value="3">3MONTH</option>
+                    <option value="4">4MONTH</option>
+                    <option value="5">5MONTH</option>
+                    <option value="6">6MONTH</option>
+                    <option value="7">7MONTH</option>
+                    <option value="8">8MONTH</option>
+                    <option value="9">9MONTH</option>
+                    <option value="10">10MONTH</option>
+                    <option value="11">11MONTH</option>
+                    <option value="12">12MONTH</option>
+                </select>
+            </div>
+            <div>
+                <label for="select" class="shes">INTEREST RATE</label><br>
+                <select name="" id="interest" class="hizu">
+                    <option value="0.05">5%</option>
+                    <option value="0.10">10%</option>
+                    <option value="0.15">15%</option>
+                    <option value="0.2">20%</option>
+                    <option value="0.5">25%</option>
+                    <option value="0.3">30%</option>
+                    <option value="0.35">35%</option>
+                    <option value="0.4">40%</option>
+                    <option value="0.45">45%</option>
+                    <option value="0.5">50%</option>
+                    <option value="0.55">55%</option>
+                    <option value="0.6">60%</option>
+                </select><br>
+            </div>
+
+        </div>
+        <div>
+            <button onclick="con()" class="hans">CALCULATE</button>
+            <p id="sakon"></p>
+        </div>
+    </div>
+    <button class="btn dasw" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">JS</button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header dy">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class=" btn-close hoes" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ody">
+            <ul>
+                <li><a href="JSASSESSMENT.html" class="west">Main Page</a></li>
+                <li><a href="JShistory.html" class="west">JShistory</a></li>
+                <li><a href="JScalculator1.html" class="west">JScalculator</a></li>
+                <li><a href="JScalculator.html" class="west">JS invstment calculator</a></li>
+                <li><a href="jsswitch.html" class="west">JSswitch</a></li>
+                <li><a href="JSloop.html" class="west">JSLOOP</a></li>
+                <li><a href="JSloancalculator.html" class="west">JS loan calculator</a></li>
+                <li><a href="Method.html" class="west">JS Method</a></li>
+                <li><a href="JSfunction.html" class="west">JS function</a></li>
+                <li><a href="JSaccomodation.html" class="west">JS accomodation</a></li>
+                <li><a href="game.html" class="west">JS game</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        function con() {
+            let amount = Number(document.getElementById('amount').value);
+            let drate = Number(document.getElementById('durate').value);
+            let irate = Number(document.getElementById('interest').value);
+            let interestrate = amount * irate;
+            let duration = interestrate / drate;
+            let total = duration + amount;
+            document.getElementById('sakon').innerHTML = `YOUR TOTAL REPAYMENT IS ${total}`
+        }
+    </script>
+    <button class="btn gop dasw" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">JS</button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header dy">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class=" btn-close hoes" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ody">
+            <ul>
+                <li><a href="JSASSESSMENT.html" class="west">Main Page</a></li>
+                <li><a href="JShistory.html" class="west">JShistory</a></li>
+                <li><a href="JScalculator1.html" class="west">JScalculator</a></li>
+                <li><a href="JScalculator.html" class="west">JS invstment calculator</a></li>
+                <li><a href="jsswitch.html" class="west">JSswitch</a></li>
+                <li><a href="JSloop.html" class="west">JSLOOP</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
