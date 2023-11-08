@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    click
+    </button>
+</head>
+
+<body>
+
+    <input type="text" id="sasa">
+    <h1 id="yemi"></h1>
+    <h1 id="diva"></h1>
+    <button onclick="mycount()">gant</button>
+    <script>
+        // function saydem(who, where) {
+        //     alert('welcome mf')
+        // }
+        // // setTimeout(saydem, 9000)
+        // setInterval(() => alert(`welcome to school david`), 1000)
+
+        // function printNumber(from, to) {
+        //     let current = from;
+        // }
+
+        function mycount() {
+            let out = document.getElementById('yemi');
+            let days = parseInt(document.getElementById('sasa').value);
+            let now = new Date().getTime();
+            let countdown = 86400000 * days;
+            let head = Number(now + countdown);
+            if (!days || days == " " || isNaN(days)) {
+                out.innerHTML = 'enter the number of days you are spending'
+            }
+
+
+            yoyo = setInterval(function () {
+                let now = new Date().getTime();
+                let distance = Number(head - now);
+                let minsa = Math.floor(distance / (1000 * 60 * 60 * 24));
+                let hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+                let Minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+                let seconds = Math.floor(distance % (1000 * 60) / (1000));
+                document.getElementById('yemi').innerHTML = `you have  ${minsa}days,${hours}hours,${Minutes}minutes and ${seconds}seconds to die`;
+                if (head <= 0) {
+                    clearInterval(yoyo);
+
+                }
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html

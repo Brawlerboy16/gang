@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="mycontainer">
+        <h1>Title: <span id="miamore"></span></h1>
+    </div>
+    <button onclick="mynewcreation()">create</button>
+    <script>
+        function mynewcreation() {
+
+            let mytitle = document.createElement('h1');
+            mytitle.style.color = 'red';
+            mytitle.style.display = 'block';
+            let myparent = document.getElementById('miamore');
+            myparent.appendChild(mytitle);
+            let mytext = document.createTextNode('best part of life')
+            mytitle.appendChild(mytext)
+        }
+    </script> -->
+    <div>
+        <input type="text" id="randas">
+        <button onclick="goner()">create</button>
+    </div>
+    <div id="mycontainer">
+        <li>F.C.T</li>
+        <li>lagos</li>
+
+
+    </div>
+    <script>
+        function goner() {
+            let text = document.getElementById('randas').value
+            let mytext = document.createTextNode(text);
+            let myparent = document.getElementById('mycontainer');
+            let mytitle = document.createElement('li');
+            myparent.appendChild(mytext);
+            myparent.appendChild(mytitle);
+            document.getElementById('randas').value = ''
+
+
+        }
+
+    </script>
+</body>
+
+</html>

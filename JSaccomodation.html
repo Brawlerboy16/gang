@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="Capture.PNG">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -27,6 +28,10 @@
             width: 50px;
             padding: 12px;
             background: greenyellow;
+        }
+
+        body {
+            color: yellowgreen;
         }
 
         .ody {
@@ -130,18 +135,32 @@
         </select>
 
         <div id="rase" style="display: none;">
-            <select class="ect">
-                <option value="">choose your choice</option>
-                <option value="">A DAY (1500-2000)</option>
-                <option value="">A MONTH (7000-1000)</option>
-                <option value="">A WEEK (30000)</option>
+            <select class="ect" id="shata">
+                <option value="shat1">choose your choice</option>
+                <option value="10000">Normal suite(10k)</option>
+                <option value="20000">Casual suite (20k)</option>
+                <option value="30000">Exclusive suite (30k)</option>
 
             </select>
 
+
         </div><br><br><br>
-        <button id="tona" style="display: none;"><a href="JSaccomodation.html">ENTER</a></button>
+
+        <div id="ase" style="display: none;"> <label for="text">HOW MANY DAYS ARE YOU STAYING:</label>
+            <input type="text" id="sasa"><br>
+            <button onclick="mycount()">ENTER</button>
+            <h4 id="yemi"></h4>
+            <h5 id="help"></h5>
+            <p id="ronin"></p>
+
+        </div><br><br>
+
+        <br>
+
     </div>
+
     <script>
+
 
 
         let input = document.querySelector('#lect')
@@ -149,15 +168,58 @@
             if (input.value === 'option2') {
                 document.getElementById('rase').style.display = 'inline-block';
                 document.getElementById('rase').style.border = '1px solid yellowgreen';
-                document.getElementById('tona').style.display = 'inline-block';
+                document.getElementById('ase').style.display = 'inline-block';
 
             }
             else {
                 document.getElementById('rase').style.display = 'none';
-                document.getElementById('tona').style.display = 'none';
+
+                document.getElementById('ase').style.display = 'none';
+
             }
         })
+        function mycount() {
+            let out = document.getElementById('yemi');
+            let days = parseInt(document.getElementById('sasa').value);
+            let now = new Date().getTime();
+            let countdown = 86400000 * days;
+            let head = Number(now + countdown);
+            if (!days || days == " " || isNaN(days)) {
+                out.innerHTML = 'enter the number of days you are spending'
+            }
+            // clearInterval(yoyo);
+
+            yoyo = setInterval(function () {
+                let now = new Date().getTime();
+                let distance = Number(head - now);
+                let minsa = Math.floor(distance / (1000 * 60 * 60 * 24));
+                let hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+                let Minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+                let seconds = Math.floor(distance % (1000 * 60) / (1000));
+                document.getElementById('yemi').innerHTML = `you have  ${minsa}days,${hours}hours,${Minutes}minutes and ${seconds}seconds to reside`;
+                if (head <= 0) {
+                    clearInterval(yoyo);
+
+                }
+
+
+            }, 1000)
+            let xo = document.getElementById('sasa').value;
+            let siva = document.getElementById('shata').value;
+            let radar = Number(xo * siva);
+            document.getElementById('ronin').innerHTML = `AMOUNT: you will pay ${radar} naira for this suite`
+        }
+
+        let serious = document.querySelector('#shata')
+        let wetin = document.getElementById('sasa').value;
+
+        serious.addEventListener("click", () => {
+            if (serious.value === 'shat1') {
+                ronin.innerHTML = 'select a choice'
+            }
+        })
+
     </script>
 </body>
 
-</html>
+</html>,

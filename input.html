@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text   " id="shine">
+    <button id="bith">calculate</button>
+    <h1 id="yemi"></h1>
+
+    <script>
+        let mycountdown =;
+        let ourcount = setInterval(mycountdownto, 1000)
+        function mycountdownto() {
+            let now = new Date().getTime();
+            let distance = mycountdown - now;
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            let Minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+            let seconds = Math.floor(distance % (1000 * 60) / (1000));
+            document.getElementById('yemi').innerHTML = `you have  ${days}days,${hours}hours,${Minutes}minutes and ${seconds}seconds to die`;
+        }
+    </script>
+</body>
+
+</html>
