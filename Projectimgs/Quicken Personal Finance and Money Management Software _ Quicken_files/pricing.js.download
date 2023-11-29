@@ -1,0 +1,119 @@
+const userCanSeeDiscount = () => {  
+  let subscriber = getCookie("qkn_subscriber");
+  if (subscriber == "") {
+    return true;
+  }
+  let subs = JSON.parse(subscriber);
+
+  if (!subs) {
+    return true;
+  }
+  if (subs && subs.is_subscriber === 0) {
+    return true;
+  }
+  if (subs && subs.sees_discount && subs.sees_discount === 1) {
+    return true;
+  }
+  else {
+    if (subs && subs.exp_date && subs.exp_date > 0) {
+      const timestamp = subs.exp_date;
+      let now = Math.floor(Date.now() / 1000);
+
+      if (timestamp > now) {
+        return false;
+      }
+
+      const seconds = now - timestamp;
+
+      // discount if expired within 45 to 60 days amd over 90
+      const days =  Math.floor(seconds / 60 / 60 / 24);
+      if (((days >= 45) && (days <= 60)) || (days >= 90)) {
+        subs.sees_discount = 1;
+        setCookie("qkn_subscriber", JSON.stringify(subs), 90);
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+const getCouponCodes = (data) => {
+  var coupon = "";
+  var couponsArray = [];
+
+  if (data && data.coupon)  {
+    for (var i = 0; i < data.coupon.length; i++) {
+      var coupons = data.coupon[i];
+      couponsArray.push(coupons.code);
+    }
+
+    // data.coupon.forEach(coupons => {
+    //   couponsArray.push(coupons.code);
+    // });
+    coupon = couponsArray.join();
+  }
+  return coupon;
+}
+
+const addCouponToLinks = (coupon) => {
+  let addlinks = document.querySelectorAll('a[href*="/shoppingcart?addproduct="]');
+  addlinks.forEach((element) => {
+    const oldhref = element.getAttribute('href');
+    element.setAttribute('href', oldhref + "&coupon_code=" + coupon);    
+  })
+}
+
+const runQKNPricing = (classes, url) => {
+  if (Quicken.DynamicPricing ) {
+    let qdp = new Quicken.DynamicPricing(classes);
+    qdp.setDomain(window.location.origin);
+
+    document.addEventListener('couponDataSet', function (e) {
+      console.log("caught setCoupon event");
+      qdp.clearData();
+      getCouponFromStorage();
+    });
+    if (!url) {
+      qdp.setURL(window.location.origin + '/get_sku_coupon_prices');
+    }
+    else {
+      qdp.setURL(url);
+    }
+    if (window.qkn_yearly) {
+      qdp.setYearly(true);
+    }
+
+    // "Loops" until the coupon data is written to local storage
+    getCouponFromStorage();
+    
+    function getCouponFromStorage() {
+      let data = JSON.parse(localStorage.getItem("couponData"));
+
+      if (userCanSeeDiscount()) {
+        coupon = getCouponCodes(data);
+        if (window.qkn_coupon && window.qkn_coupon !== "" ) {
+          coupon = window.qkn_coupon;
+        }
+        let param = new URLSearchParams(window.location.search).get("coupon_code");
+        if (!param) {
+          param = new URLSearchParams(window.location.search).get("c");
+        }
+        if (param) {
+          coupon = param;
+          //localStorage.removeItem("qknPriceData");
+          //localStorage.removeItem("couponData")
+          localStorage.setItem('qkn-coupon', coupon);
+          qdp.getCoupon();
+          addCouponToLinks(coupon);
+        } 
+        if (coupon) {
+          qdp.setCoupon(coupon);
+          qdp.adjustPrices();
+        }
+      }
+      else {
+        qdp.adjustPrices();
+      }    
+    }
+  }
+}

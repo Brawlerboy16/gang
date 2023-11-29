@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="Projectimgs/instacart logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>instacart</title>
+</head>
+<style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .der {
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .bout {
+        line-height: 11px;
+        margin-top: 29px;
+    }
+
+    .wee {
+        margin-top: 56px;
+    }
+
+    .wee p {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .bout .s1 {
+        font-size: 25px;
+        font-weight: 600;
+
+    }
+
+    .bout .s2 {
+        font-family: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .billy {
+        margin-top: 29px;
+        text-align: center;
+    }
+
+    .billy p {
+
+        font-size: 21px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #108910;
+        cursor: pointer;
+    }
+
+    .billy p :hover {
+        text-decoration: underline #108910;
+        cursor: pointer;
+    }
+
+    .j1 {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 54px;
+    }
+
+    .j2 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .canvas {
+        font-size: 16px;
+
+    }
+
+    .gad {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        justify-content: space-between;
+        width: 55%;
+
+    }
+
+    .weder {
+
+        padding-top: 10px;
+        padding-left: 11px;
+        width: 395px;
+        height: 91px;
+        background: white;
+
+        border-radius: 8px;
+        box-shadow: 0px 2px 5px 2px rgb(233, 229, 229);
+
+    }
+
+    .gad3 {
+        text-align: left;
+        line-height: 4px;
+    }
+
+    .gad3 .p1 {
+        font-size: 17px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .gad3 .p2 {
+        font-size: 12px;
+        color: #108910;
+        font-weight: 500;
+    }
+
+    .gad3 .p3 {
+        font-size: 13px;
+        color: rgb(151, 149, 149);
+        border: 1px solid rgb(151, 149, 149);
+        text-align: center;
+        border-radius: 3px;
+        width: 88px;
+        padding-top: 7px;
+        height: 19px;
+    }
+
+    .gad1 p img {
+        border: 1px solid rgb(201, 195, 195);
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+
+    }
+
+    .gad1 {
+        margin-top: -7px;
+    }
+
+    .stick {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weup {
+        margin-top: 23px;
+
+    }
+
+    .pac {
+        margin-top: 19px;
+    }
+
+    .jigger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 77%;
+
+
+    }
+
+    .issu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kid {
+
+        box-shadow: 0px 2px 5px 2px rgb(233, 229, 229);
+        background-color: #B1E5D5;
+        border-radius: 9px;
+        width: 77%;
+        height: 100px;
+    }
+
+    .nigga {
+        background-color: #deedd6;
+        width: auto;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url(Projectimgs/insa.jpg);
+        overflow: hidden;
+    }
+
+    .rum {
+        margin-top: 2px;
+
+    }
+
+    .rum select {
+        outline: none;
+        width: 19px;
+        border-radius: 2px;
+        border: none;
+        background: #deedd6;
+    }
+
+    .nigga1 {
+        border: 1px solid rgb(250, 235, 235);
+        width: 85px;
+        height: 50px;
+
+        border-radius: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+
+    .nigga3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 65%;
+
+        margin-top: 9px;
+
+    }
+
+    .jum p {
+        margin-top: 1.7px;
+    }
+
+    nav {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        position: sticky;
+        top: 0px;
+        border-bottom: 1px solid rgb(243, 244, 245);
+        background: white;
+
+    }
+
+    .water {
+
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        background: white;
+        text-align: center;
+        box-shadow: 0px 2px 5px 2px rgb(233, 229, 229);
+    }
+
+    .water p img {
+        width: 90px;
+        height: 90px;
+        margin-top: 6px;
+    }
+
+    .kida {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .west {
+        text-align: center;
+        font-size: 34px;
+        margin-top: 23px;
+    }
+
+    .sad {
+        display: none;
+    }
+
+    .suu {
+        margin-top: -4px;
+    }
+
+
+    .you i {
+        font-size: 14px;
+        color: black;
+
+    }
+
+
+
+
+    .bank {
+        display: flex;
+        flex-direction: row;
+        margin-top: 9px;
+        width: 120%;
+        justify-content: space-between;
+    }
+
+    .bank p {
+        margin-top: 4px;
+        font-size: 18px;
+
+    }
+
+    .bank button {
+        background: #108910;
+        color: white;
+        width: 95px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        border-radius: 29px;
+    }
+
+    .down {
+        padding-top: 39px;
+    }
+
+    .div1 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 9px;
+    }
+
+    .chad {
+        display: none;
+    }
+
+    .bore {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        width: 1030px;
+        border: 1px solid white;
+        background: rgb(243, 244, 245);
+        padding-top: 12px;
+        border-radius: 8px;
+
+        padding-left: 10px;
+
+
+
+    }
+
+    .border {
+        border: 1px solid black;
+        width: 343px;
+        margin-left: 10%;
+        padding-bottom: 51px;
+        background-color: #F6F7F8;
+        border-radius: 12px;
+    }
+
+    .sea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sea .ea {
+        font-size: 25px;
+    }
+
+    .sea .ae {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 21px;
+        margin-top: -4px;
+    }
+
+    .bore div p i {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+
+
+
+    .sheez {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -4%;
+    }
+
+    .carter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 20%;
+
+
+    }
+
+    .emon {
+        display: none;
+    }
+
+    .bor input {
+        border: none;
+        width: 345%;
+        background: rgb(243, 244, 245);
+        outline: none;
+        font-size: 17px;
+        color: black;
+        font-weight: 600;
+    }
+
+    .sur {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 93%;
+        margin-left: 2%;
+    }
+
+    .laid {
+        display: none;
+    }
+
+    .suru {
+        display: flex;
+        flex-direction: row;
+        width: 42%;
+        margin-left: 7%;
+
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width:768px) {
+        .bank button {
+            width: 0%;
+            width: 91px;
+        }
+
+        .bout {
+            line-height: 17px;
+            margin-top: 10px;
+            margin-left: 8%;
+            padding-bottom: 10px;
+        }
+
+        .bout .s1 {
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 23px;
+
+        }
+
+        .bout .s2 {
+            margin-top: -12px;
+            font-family: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sur {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 87%;
+            margin-left: 3%;
+        }
+
+        .suru {
+            display: flex;
+            flex-direction: none;
+            width: 100%;
+            margin-left: 2%;
+
+
+        }
+
+        .j2 {
+            display: none;
+        }
+
+        .sad {
+            display: block;
+        }
+
+        .lay {
+            display: none;
+        }
+
+        .laid {
+            display: block;
+            margin-top: -2px;
+
+
+        }
+
+        .weup {
+            display: none;
+        }
+
+        .nigga1 {
+            display: none;
+        }
+
+        .issu {
+            display: none;
+        }
+
+
+        .nigga {
+            height: 200px;
+        }
+
+        nav {
+            padding-top: 1px;
+            padding-bottom: 5px;
+        }
+
+        .west {
+            line-height: 32px;
+        }
+
+        .j1 {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 31px;
+            margin-top: 9px;
+        }
+
+        .chad {
+            display: block;
+        }
+
+        .billy {
+            margin-top: 45px;
+            text-align: center;
+        }
+
+        .billy p {
+
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #108910;
+            cursor: pointer;
+        }
+
+        .emon {
+            box-shadow: 0px 2px 5px 2px rgb(233, 229, 229);
+            background-color: #B1E5D5;
+            border-radius: 9px;
+            height: 100px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .emo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .billy p :hover {
+            text-decoration: underline #108910;
+            cursor: pointer;
+        }
+
+        .bore {
+            display: none;
+        }
+
+        .sheez {
+            overflow-y: scroll;
+            padding-bottom: 18px;
+        }
+
+        .cad {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <!-- <nav>
+
+        <div class="container-fluid sur col-xl-11">
+            <div class="div1">
+
+                <div>
+                    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target"#offcanvasScrolling"
+                        aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars canvas"></i></button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            kwskala
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <p><img src="https://www.instacart.com/assets/beetstrap/brand/2022/instacart-logo-color-6678cb82d531f8910d5ba270a11a7e9b56fc261371bda42ea7a5abeff3492e1c.svg"
+                            alt=""></p>
+                </div>
+
+            </div>
+            <div>
+                <div class="bore">
+                    <div>
+                        <p class="you"><i class="bi bi-search"></i></p>
+                    </div>
+                    <div class="bor"><input placeholder="Search product and stores"></div>
+                </div>
+            </div>
+            <div class="bank">
+                <p>Log in</p>
+                <button>Sign up</button>
+            </div>
+        </div>
+    </nav> -->
+    <nav>
+        <div>
+            <div class="sur">
+                <div class="div1">
+                    <div class="suu">
+                        <button class="btn " type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                                class="fa-solid fa-bars canvas"></i></button>
+
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                                </h5>
+                                <button type="button" class="btn-close clap" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="dropdown-center">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        PROJECTS
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="lay"><img
+                                src="https://www.instacart.com/assets/beetstrap/brand/2022/instacart-logo-color-6678cb82d531f8910d5ba270a11a7e9b56fc261371bda42ea7a5abeff3492e1c.svg"
+                                alt=""></p>
+                        <p class="laid">
+                            <img src="https://www.instacart.com/assets/footer/2022/carrot-footer-acffa90f16b04b4ec635f507baed133cdf562058823c3e517b7d7d9a9742fd84.svg"
+                                alt="" width="26px" height="26px">
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bore">
+                        <div>
+                            <p class="you"><i class="bi bi-search"></i></p>
+                        </div>
+                        <div class="bor"><input placeholder="Search product and stores"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bank">
+                        <div>
+                            <p>Log in</p>
+                        </div>
+                        <div> <button>Sign up</button></div>
+                    </div>
+                </div>
+
+            </div>
+
+    </nav>
+    <div class="nigga">
+        <div class="down">
+            <div class="suru">
+                <div class=" nigga1">
+                    <div class="nigga3">
+                        <div class="jum">
+                            <p><img src="Projectimgs/flag3.PNG" alt=""></p>
+                        </div>
+                        <div class="rum">
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value="">CA</option>
+                                <option value="">US</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="j1">Order groceries<br class="sad"> for<br class="cad"> delivery or <br class="sad">
+                        pickup today
+                    </p>
+                    <p class="j2">Whatever you want from local stores, brought right to your door.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="west">Choose your store in <span style="color: #108910;"> San<br class="chad"> Francisco Bay Area
+                <div></div>
+            </span>
+        </p>
+        <div class="weup">
+            <div class="stick">
+                <div class="jigger">
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stick pac">
+                <div class="jigger">
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stick pac">
+                <div class="jigger">
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stick pac">
+                <div class="jigger">
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="weder">
+                        <div class="gad">
+                            <div class="gad1">
+                                <p><img src="https://www.instacart.com/image-server/60x60/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                                        alt=""></p>
+
+                            </div>
+                            <div class="gad3">
+                                <p class="p1">Safeway</p>
+                                <p class="p2"><span><i class="fa-solid fa-bolt"></i></span> <span>Delivery by
+                                        8:00am</span>
+                                </p>
+                                <p class="p3">Accepts EBT</p>
+                            </div>
+                            </di v>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="billy">
+                <p>Show all</p>
+            </div>
+            <div class="issu">
+                <div class="kid">
+                    <div class="kida">
+                        <div>
+                            <p><img src="https://www.instacart.com/assets/homepage/QR_code_left-d5860cb8e299f89f4a14b7f556d11052dc21f59d54fdd69e2b2154538fc31946.png"
+                                    alt="" width="267px" height="100px"></p>
+                        </div>
+                        <div class="bout">
+                            <p class="s1">Get the full Instacart experience</p>
+                            <p class="s2">Scan the QR code with your camera. First delivery is free.</p>
+                        </div>
+                        <div class="water">
+                            <p><img src="https://www.instacart.com/assets/homepage/download_QR_code-ab339f5990df4ab486f77ec8bb373d364096838db9cfd4a7cfc8459633aa1d5b.png"
+                                    alt=""></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="emon">
+            <div class="emo">
+                <div class="bout">
+                    <p class="s1">Get the full Instacart<br> experience</p>
+                    <p class="s2">Scan the QR code with your camera.<br>First delivery is free.</p>
+                </div>
+                <div class="water">
+                    <p><img src="https://www.instacart.com/assets/homepage/download_QR_code-ab339f5990df4ab486f77ec8bb373d364096838db9cfd4a7cfc8459633aa1d5b.png"
+                            alt=""></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wee">
+            <p>Grocery delivery you can count on
+
+            </p>
+        </div>
+
+
+        <div class="sheez">
+            <div class="ter">
+                <div class="carter">
+                    <div class="border">
+                        <p class=""><img
+                                src="https://www.instacart.com/image-server/343x257/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/homepage/choose-what-you-want-efca561a8f08c2a5ce5ed77df6c10bf54d4439ca8434f12e9d9641bf91dd2b43.jpg"
+                                alt="" width="343px" height="257px" class="der"></p>
+
+                        <div>
+                            <div class="sea">
+                                <p class="ea">Choose what you want</p>
+                                <p class="ae">Select items from your favorite grocery<br> stores at Instacart.com or
+                                    in
+                                    the
+                                    app.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <p class=""><img
+                                src="https://www.instacart.com/image-server/343x257/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/homepage/choose-what-you-want-efca561a8f08c2a5ce5ed77df6c10bf54d4439ca8434f12e9d9641bf91dd2b43.jpg"
+                                alt="" width="343px" height="257px" class="der"></p>
+
+                        <div>
+                            <div class="sea">
+                                <p class="ea">Choose what you want</p>
+                                <p class="ae">Select items from your favorite grocery<br> stores at Instacart.com or
+                                    in
+                                    the
+                                    app.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border">
+                        <p class=""><img
+                                src="https://www.instacart.com/image-server/343x257/filters:fill(FFF,true):format(webp)/www.instacart.com/assets/homepage/choose-what-you-want-efca561a8f08c2a5ce5ed77df6c10bf54d4439ca8434f12e9d9641bf91dd2b43.jpg"
+                                alt="" width="343px" height="257px" class="der"></p>
+
+                        <div>
+                            <div class="sea">
+                                <p class="ea">Choose what you want</p>
+                                <p class="ae">Select items from your favorite grocery<br> stores at Instacart.com or
+                                    in
+                                    the
+                                    app.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br>
+</body>
