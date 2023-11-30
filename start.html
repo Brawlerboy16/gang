@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<style>
+    body {
+
+        font-family: arial;
+        color: black;
+        background: rgb(13, 14, 13);
+        overflow-y: hidden;
+
+    }
+
+    .lis {
+        background: rgb(63, 62, 62);
+        color: rgb(135, 192, 20);
+        border-radius: none;
+        font-weight: bolder;
+    }
+
+    .lis li a {
+        color: rgb(135, 192, 20);
+
+    }
+
+    .lis li a:hover {
+        background: rgb(135, 192, 20);
+        color: rgb(63, 62, 62);
+    }
+
+    #message {
+        font-size: 17px;
+    }
+
+    #mess {
+        font-size: 15px;
+        margin-top: 35px;
+        font-weight: 700;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 42px;
+    }
+
+    #former {
+        margin-top: 56px;
+    }
+
+    #shout {
+        margin-top: -15px;
+    }
+
+    #time {
+        margin-top: 67px;
+    }
+
+    #div1 {
+
+        text-align: center;
+        width: 34%;
+
+        height: 500px;
+        color: black;
+
+
+        background-image: none;
+        border-radius: 12px;
+
+    }
+
+    .stem {
+        border: 1px solid rgb(135, 192, 20);
+        width: 25%;
+        height: 350px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        background: rgb(63, 62, 62);
+        border-radius: 3px;
+    }
+
+    .sadly {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 10%;
+    }
+
+    input {
+        border: 1px solid rgb(135, 192, 20) solid rgb(110, 108, 108);
+        padding: 4px;
+        color: rgb(135, 192, 20);
+        width: 40%;
+
+        outline: none;
+        background: rgb(63, 62, 62);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+
+
+    }
+
+    h3 {
+        margin-top: 5px;
+        color: rgb(135, 192, 20);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .shis {}
+
+    label {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    #min {
+        color: white;
+        font-size: 25px;
+    }
+
+    .men {
+        color: rgb(63, 62, 62);
+        ;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+
+
+    }
+
+    #nim {
+        color: white;
+        font-size: 25px;
+    }
+
+    #self {
+        margin-top: 33px;
+    }
+
+    #sec {
+        color: white;
+        font-size: 25px;
+    }
+
+    #amn {
+        background-image: url(plea.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        height: 870px;
+
+
+    }
+
+    #rcpt span {
+        color: rgb(135, 192, 20);
+    }
+
+    ;
+
+    #fare {
+        color: rgb(135, 192, 20);
+    }
+
+
+
+    button {
+        width: 160px;
+        border: 1px solid rgb(135, 192, 20) solid yellowgreen;
+        height: 45px;
+        text-align: center;
+        border-radius: 7px;
+        font-size: 13px;
+        background: rgb(63, 62, 62);
+        color: rgb(164, 233, 26, 0.7);
+        font-weight: 600;
+    }
+
+    @media screen and (max-width:768px) {
+        body {
+            overflow-y: hidden;
+
+        }
+
+        .stem {
+            width: 100%
+        }
+    }
+</style>
+
+<body>
+
+    <div id="amn">
+        <div id="div1">
+            <div class="dropdown-center sadly">
+                <a class=" dropdown-toggle men" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JS ASSESSMENT
+                </a>
+
+                <ul class="dropdown-menu lis">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="stem">
+
+                <H3>JS CAR SYSTEM</H3>
+                <div id="former" class="shis">
+
+                    <input type="text" id="input1" placeholder=" your location">
+
+                    <input type="text" id="input2" placeholder="destination">
+                    <p id="mess" style="color: black
+            
+            "></p>
+                </div>
+
+                <div style="display: none;" id="time">
+                    <span id="message"></span>
+                    <br><br>
+                    <span id="min">00</span>
+                    <span id="nim">:</span>
+                    <span id="sec">00</span>
+
+                </div><br><br>
+                <div id="shout">
+                    <button id="start">Request ride</button>
+                    <button id="pause">Pause ride</button>
+                    <button id="continue">continue ride</button>
+                    <button id="stop">Stop ride</button><br>
+                </div>
+                <div id="self">
+                    <div style="text-align: center;" id="shoq">
+                        <div class="spinner-border" role="status" style="color:  rgb(135, 192, 20);" id="jeff">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <h4 style="text-align: center; color:  rgb(135, 192, 20);">processing your receipt</h4>
+                    </div>
+                </div>
+                <div id="rcpt" style="display: none;">
+                    <h3> RECEIPT</h3>
+                    <span id="fare"></span><br>
+                    <span id="used"></span><br>
+                    <span id="tip"></span><br>
+                    <span id="total"></span><br> <br>
+
+
+                    <button id="done">ok</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        let sho = document.getElementById('shoq');
+        document.getElementById('input1').style.textTransform = 'Capitalize'
+        document.getElementById('input2').style.textTransform = 'Capitalize'
+        let div1 = document.getElementById('div1');
+        let former = document.getElementById('former');
+        let mess = document.getElementById('mess');
+        let message = document.getElementById('message');
+        let time = document.getElementById('time');
+        let min = document.getElementById('min');
+        let sec = document.getElementById('sec');
+        let shout = document.getElementById('shout');
+        let art = document.getElementById('done');
+        let pase = document.getElementById('pause');
+        let conti = document.getElementById('continue');
+        let start = document.getElementById('start');
+        let stor = document.getElementById('stop');
+        sho.style.display = 'none'
+        pase.style.display = 'none'
+        conti.style.display = 'none'
+        stor.style.display = 'none'
+        let mapa;
+        let sapa;
+        let rb = 0;
+        let gg;
+        function begin() {
+            ++rb
+            mapa = parseInt(rb / 60);
+            sapa = rb % 60;
+            min.innerHTML = mapa;
+            sec.innerHTML = sapa;
+            start.style.display = 'none'
+            stor.style.display = 'inline-block'
+            pase.style.display = 'inline-block'
+            if (mapa < 10) {
+                min.innerHTML = `${0}` + `${mapa}`;
+            }
+            if (sapa < 10) {
+                sec.innerHTML = `${0}` + `${sapa}`;
+            }
+        }
+        function anythin() {
+            gg = setInterval(begin, 1000)
+        }
+        function star() {
+            anythin()
+            let input1 = document.getElementById('input1').value;
+            let input2 = document.getElementById('input2').value;
+            if (!input1 || !input2) {
+                clearInterval(gg);
+                document.getElementById('mess').innerHTML = '<p>Enter your location and destination</p>';
+                document.getElementById('mess').style.color = ' rgb(135, 192, 20)'
+
+            }
+            else {
+                stor.style.display = 'inline-block';
+                pase.style.display = 'inline-block';
+                start.style.display = 'none';
+                document.getElementById('time').style.display = 'block';
+                message.style.display = 'inline-block';
+                former.style.display = 'none';
+                document.getElementById('amn').style.backgroundImage = "url(fea.gif)"
+                message.innerHTML = 'Processing the location to destination'
+                document.getElementById('message').style.color = ' rgb(135, 192, 20)'
+
+            }
+        }
+        function pause() {
+            clearInterval(gg);
+            start.style.display = 'none';
+            pase.style.display = 'none';
+            conti.style.display = 'inline-block';
+            stor.style.display = 'inline-block';
+            message.innerHTML = `Hold on`;
+            document.getElementById('amn').style.backgroundImage = "url(plea.jpg)"
+
+        }
+        function contie() {
+            anythin()
+            start.style.display = 'none'
+            conti.style.display = 'none'
+            document.getElementById('amn').style.backgroundImage = "url(fea.gif)"
+            message.innerHTML = `Journey has resumed`
+        }
+        function stope() {
+            time.style.display = 'none';
+            start.style.display = 'none';
+            conti.style.display = 'none';
+            sho.style.display = 'block'
+            pase.style.display = 'none';
+            document.getElementById('amn').style.backgroundImage = "url(plea.jpg)"
+            shout.style.display = 'none';
+            document.getElementById('rcpt').style.color = ' rgb(135, 192, 20);';
+            let base = document.getElementById('fare');
+            let timeuse = document.getElementById('used');
+            let tip = document.getElementById('tip');
+            let total = document.getElementById('total');
+            message.style.display = 'none';
+            let spa = document.getElementById('spa');
+            let me = document.getElementById('jeff');
+
+            clearInterval(gg);
+            document.getElementById('fare').innerHTML = 'BASE FARE - ₦800';
+            let bs = mapa;
+            let as = sapa;
+            if (mapa < 10) {
+                bs = `${0}` + `${mapa}`;
+            }
+            if (sapa < 10) {
+                as = `${0}` + `${sapa}`;
+            }
+            timeuse.innerHTML = `TIME USED - ${bs} : ${as}`;
+            tip.innerHTML = `TIP - ₦5`;
+
+            let thetotal = (800 * mapa) + Math.floor((sapa / 60) * 20) + Number(5);
+            total.innerHTML = `TOTAL - ₦${thetotal} `;
+
+            setTimeout(function () {
+                sho.style.display = 'none'
+                document.getElementById('rcpt').style.display = 'block';
+            }, 1200);
+
+
+        }
+        function ok() {
+            min.innerHTML = '00';
+            sec.innerHTML = '00';
+            mapa = 0;
+            sapa = 0;
+            rb = 0;
+            document.getElementById('former').style.display = 'block'
+
+            mess.style.display = 'none';
+            start.style.display = 'inline-block';
+            pase.style.display = 'none';
+
+            rb = 0
+            let input1 = document.getElementById('input1').value;
+            letinput2 = input1 = document.getElementById('input1').value;
+            document.getElementById('input1').value = ''
+            document.getElementById('input2').value = ''
+            document.getElementById('time').style.display = 'none'
+            document.getElementById('rcpt').style.display = 'none'
+        }
+
+
+
+        art.addEventListener('click', ok)
+        stor.addEventListener('click', stope);
+        conti.addEventListener('click', contie);
+        start.addEventListener('click', star);
+        pase.addEventListener('click', pause);
+    </script>
+    <!-- <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div> -->
+</body>
+
+</html>

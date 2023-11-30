@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            color: yellowgreen;
+        }
+
+        .div1 {
+            text-align: center;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+
+            width: px;
+            max-width: 600px;
+            min-width: 300px;
+            height: 310px;
+
+
+        }
+
+        #input1 {}
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div id="diva">
+            <div id="form">
+                <h1>JS CAR SYSTEM </h1>
+                <label for="text">FROM</label>
+                <input type="text" id="input1">
+                <label for="text">TO</label>
+                <input type="text" id="input2">
+                <p id="message"></p>
+            </div>
+            <br>
+            <span id="message2"></span>
+            <div style="display: none;" id="div2">
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <br>
+            </div>
+            <div>
+                <button id="start">start</button>
+                <button id="pause">pause</button>
+                <button id="continue">continue</button>
+                <button id="stop">stop</button><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        let diva = document.getElementById('diva');
+        let message2 = document.getElementById('message2')
+        let min = document.getElementById('min');
+        let sec = document.getElementById('sec');
+        let start = document.getElementById('start');
+        let pause = document.getElementById('pause');
+        let cont = document.getElementById('continue');
+        let sto = document.getElementById('stop')
+        pause.style.display = 'none'
+        cont.style.display = 'none'
+        sto.style.display = 'none'
+        let second;
+        let minute;
+
+
+        let rb = 0;
+        let mount;
+        function forstart() {
+            ++rb
+            minut = parseInt(rb / 60);
+            second = rb % 60;
+            min.innerHTML = minut;
+            sec.innerHTML = second;
+            start.style.display = 'none'
+            sto.style.display = 'inline-block'
+            pause.style.display = 'inline-block'
+            if (minute < 10) {
+                min.innerHTML = `${0}` + `${minute}`;
+            }
+            if (second < 10) {
+                sec.innerHTML = `${0}` + `${second}`;
+            }
+        }
+    </script>
+</body>
+
+</html>

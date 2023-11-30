@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .baller {
+            text-align: center;
+
+        }
+
+        body {
+            font-family: arial;
+            background: gray;
+            color: yellowgreen;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            margin: 0px auto;
+            margin-top: 63px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rigy">
+        <h2>JS TIME MANAGEMENT APPLICATION</h2><br>
+        <div class="maput">
+            <div class="baller">
+                <input type="text" id="we" placeholder="Input task" />
+                <input type="text" id="keb" placeholder=" minutes" /><br> <br>
+                <button id="kir">Add task</button><br />
+
+            </div>
+
+            <table id="tel" border="1" cellpadding="10" width="90%" style="text-align: center;" cellspacing="0px">
+                <thead>
+                    <tr>
+                        <td>Task</td>
+                        <td>Time started</td>
+                        <td>Until</td>
+
+                        <td>Delete</td>
+                        <td>Mark</td>
+                        <td>Date</td>
+
+                    </tr>
+                </thead>
+                <tbody id="yu"></tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function baboo() {
+            let m;
+            let a = document.getElementById(`we`).value;
+            let b = document.getElementById(`yu`);
+            let c = document.createElement(`td`);
+            let d = document.createElement(`tr`);
+            let e = document.createTextNode(a);
+            let h = document.getElementById(`keb`).value;
+            c.appendChild(e);
+            d.appendChild(c);
+            b.appendChild(d);
+            let dat = new Date().getDay;
+            let anythin = ['s', 'm', 't', 'w', 't', 'f', 's']
+
+            tim = `${anythin[dat]}`;
+
+            let tex = document.createTextNode(tim);
+            let cre = document.createElement(`td`);
+            cre.appendChild(tex);
+            d.appendChild(cre);
+
+            const countdown = document.createElement("td");
+            countdown.textContent = "00:00:00";
+            startCountdown(countdown);
+            d.appendChild(countdown);
+
+            function startCountdown(countdownElement) {
+                const targetTime =
+                    new Date().getTime() + document.getElementById('keb').value * 60 * 1000;
+
+                function updateCountdown() {
+                    const currentTime = new Date().getTime();
+                    const timeDifference = targetTime - currentTime;
+
+                    if (timeDifference <= 0) {
+                        countdownElement.textContent = "Expired";
+                        countdownElement.style.color = "#dc3545";
+                        d.style.disable = `disable`;
+
+                    } else {
+                        const hours = Math.floor(timeDifference / (1000 * 60 * 60));
+                        const minutes = Math.floor(
+                            (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+                        );
+                        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                        countdownElement.textContent = `${formatTime(hours)}:${formatTime(
+                            minutes
+                        )}:${formatTime(seconds)}`;
+                    }
+                }
+
+                function formatTime(time) {
+                    return time < 10 ? `0${time}` : time;
+                }
+
+                updateCountdown();
+                m = setInterval(updateCountdown, 1000);
+            }
+
+            let jomtd = document.createElement(`td`);
+            let nod = document.createTextNode(`\u00d7`);
+            jomtd.appendChild(nod);
+            d.appendChild(jomtd);
+            jomtd.title = 'Delete'
+            jomtd.style.backgroundColor = 'red'
+            jomtd.style.color = 'white';
+            jomtd.style.cursor = `pointer`;
+            jomtd.className = 'close';
+
+            let ment = document.getElementsByClassName(`close`);
+            let g;
+            for (g = 0; g < ment.length; g++) {
+                ment[g].onclick = function () {
+                    this.parentNode.style.display = `none`;
+                };
+            }
+
+            let paw = document.createElement(`td`);
+            let san = document.createTextNode(`\u2714`);
+            paw.appendChild(san);
+            d.appendChild(paw);
+            paw.style.cursor = `pointer`;
+            paw.title = 'Mark done';
+            paw.style.backgroundColor = 'green'
+            paw.style.color = 'white'
+            paw.className = 'done'
+
+            let donc = document.getElementsByClassName(`done`);
+
+            for (r = 0; r < donc.length; r++) {
+                donc[r].onclick = function () {
+                    this.parentNode.style.textDecoration = `line-through`;
+                    clearInterval(m);
+
+                };
+            }
+
+            // let child = document.createElement(`td`);
+            // let exn = document.createTextNode(`Edit`);
+            // child.appendChild(exn);
+            // d.appendChild(child);
+            // child.className = `edit`;
+            // child.title = 'Edit';
+            // child.style.cursor = `pointer`;
+            // child.style.backgroundColor = 'blue'
+            // child.style.color = 'white'
+
+            // let son = document.getElementsByClassName(`edit`);
+            // let f;
+            // for (f = 0; f < son.length; f++) {
+            //     son[f].onclick = function () {
+            //         document.getElementById(`we`).value = a;
+            //         this.parentNode.style.display = `none`;
+            //         document.getElementById(`keb`).value = h;
+            //     };
+            // }
+
+            document.getElementById(`we`).value = ''
+            document.getElementById(`keb`).value = ''
+
+            if (!a || !h || isNaN(h)) {
+                alert('Enter the right input')
+                d.style.display = 'none'
+            }
+            else {
+                d.style.display = 'display'
+            }
+        }
+
+        let get = document.getElementById(`kir`);
+        get.addEventListener(`click`, baboo);
+    </script>
+</body>
+
+</html>
